@@ -78,7 +78,7 @@ const Form2 = () => {
         <form
             method="POST"
             onSubmit={formSubmit}
-            className="contact-form  bg-white shadow-md rounded py-5 lg:px-5  md:p-10 h-full lg:h-[560px] xl:h-full"
+            className="contact-form  mt-4 bg-white shadow-md rounded py-5 lg:px-5  md:p-10 h-full lg:h-[560px] xl:h-full"
             id="contact-form"
         >
             <div className="mb-10 text-center">
@@ -87,7 +87,7 @@ const Form2 = () => {
                     className="text-[#50A477] truncate uppercase text-[25px] xl:text-[41px] fill-white align-top leading-none font-semibold pt-3"
                     for="password"
                 >
-                    Send your query
+                    Or Send your query
                 </label>
             </div>
 

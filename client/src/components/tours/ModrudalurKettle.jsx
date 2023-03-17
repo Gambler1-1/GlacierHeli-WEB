@@ -6,9 +6,13 @@ import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
 import props from "react";
+<<<<<<< Updated upstream
 import northtour1 from '../assets/images/Ntour3image1.jpeg'
 import northtour2 from '../assets/images/Ntour3image2.jpeg'
 import northtour3 from '../assets/images/Ntour3image3.jpeg'
+=======
+import Booking from '../utils/BookingForm';
+>>>>>>> Stashed changes
 
 const Tour = () => {
   const [question, setquestion] = useState(0);
@@ -103,9 +107,9 @@ const Tour = () => {
             <br />
             <h2 className='font-bold'>Total Tour Time And Distance</h2>
             <ul class="list-disc text-[15px] text-lg list-inside">
-            <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Beitarhúsið, Möðrudalur </li>
+              <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Beitarhúsið, Möðrudalur </li>
               <li className='flex'> Total tour time &nbsp; <FaClock className='text-[#50A477]' />&nbsp; 15-20 minutes (may fluctuate)</li>
-              
+
               <li className='flex'> Final Destination &nbsp;<FaClock className='text-[#50A477]' /> &nbsp;Beitarhúsið, Möðrudalur</li>
             </ul>
             <br />
@@ -264,8 +268,8 @@ const Tour = () => {
 
         </div>
         <div class="col-span-2">
-          <h1 className='text-center font-bold mt-10  lg:text-3xl'>BOOK THIS TOUR</h1>
-          <div class="bokunWidget" data-src="https://widgets.bokun.io/online-sales/103ed684-7b5c-437e-ba25-4fae951ded34/experience-calendar/694171"></div>
+          <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
+          <Booking />
           <div className='h-[600px]'>
             <Form />
           </div>

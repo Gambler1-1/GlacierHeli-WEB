@@ -9,6 +9,7 @@ import TalesOfFire from './components/tours/TalesOfFire'
 import Dazzling from './components/tours/Dazzling'
 import HeliCopterTour from './components/tours/HelicopterTour'
 import GameOfThrones from './components/tours/GameOfThrones'
+import Cart from './components/utils/Cart'
 import Geothermal from './components/tours/Geothermal'
 import Eruption from './components/tours/EruptionEscapade'
 import OurFleet from './components/our_fleet/OurFleet'
@@ -103,6 +104,10 @@ function App() {
             <Route
               path="/TalesOfFire"
               element={<Layout><TalesOfFire /></Layout>}
+            />
+            <Route
+              path="/Cart"
+              element={<Layout><Cart/></Layout>}
             />
             <Route
               path="/Dazzling"

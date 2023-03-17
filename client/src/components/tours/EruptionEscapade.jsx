@@ -6,9 +6,13 @@ import { faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
 
 import Form from '../utils/Form2';
+<<<<<<< Updated upstream
 import reyktour1 from '../assets/images/Rtour1image1.jpeg'
 import reyktour2 from '../assets/images/Rtour1image2.jpeg'
 import reyktour3 from '../assets/images/Rtour1image3.jpeg'
+=======
+import Booking from '../utils/BookingForm';
+>>>>>>> Stashed changes
 
 const Tour = () => {
 
@@ -316,8 +320,8 @@ const Tour = () => {
                     </div>
                 </div>
                 <div class="col-span-2">
-                    <h1 className='text-center font-bold mt-10  lg:text-3xl'>BOOK THIS TOUR</h1>
-                    <div class="bokunWidget" data-src="https://widgets.bokun.io/online-sales/103ed684-7b5c-437e-ba25-4fae951ded34/experience-calendar/694171"></div>
+                    <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
+                    <Booking />
                     <div className='h-[600px]'>
                         <Form />
                     </div>

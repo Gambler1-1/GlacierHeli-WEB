@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { FaBlog, FaSuitcase, FaUsers, FaStar, FaHome } from 'react-icons/fa';
+import { FaBlog, FaSuitcase, FaUsers, FaStar, FaHome, FaCheck, FaTimesCircle } from 'react-icons/fa';
 
 const AdminSidebar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isOrdersDropdownOpen, setIsOrdersDropdownOpen] = useState(false);
 
   const handleMouseEnter = () => {
     setIsDropdownOpen(true);
@@ -10,6 +11,13 @@ const AdminSidebar = () => {
 
   const handleMouseLeave = () => {
     setIsDropdownOpen(false);
+  };
+  const handleOrdersMouseEnter = () => {
+    setIsOrdersDropdownOpen(true);
+  };
+
+  const handleOrdersMouseLeave = () => {
+    setIsOrdersDropdownOpen(false);
   };
 
   return (
@@ -54,7 +62,46 @@ const AdminSidebar = () => {
                 </li>
               </ul>
             </li>
+
+            <li
+              className="relative"
+              onMouseEnter={handleOrdersMouseEnter}
+              onMouseLeave={handleOrdersMouseLeave}
+            >
+              <a
+                className="block py-2 px-4 text-white"
+              >
+                <FaStar className="inline-block mr-2" />
+                Orders
+              </a>
+              <ul
+                className={`absolute top-0 left-full bg-gray-100 rounded-lg shadow-lg mt-2 ${isOrdersDropdownOpen ? 'block' : 'hidden'
+                  }`}
+              >
+                <li>
+                  <a
+                    href="/confirmed-orders"
+                    className="block py-2 px-4"
+                  >
+                    <FaCheck className="inline-block mr-2" />
+                    Confirmed Orders
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/failed-orders"
+                    className="block py-2 px-4"
+                  >
+                    <FaTimesCircle className="inline-block mr-2" />
+                    Failed Orders
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
             <li>
+
               <a
                 href="/about"
                 className="block py-2 px-4 text-white"
@@ -81,6 +128,7 @@ const AdminSidebar = () => {
                 Reviews
               </a>
             </li>
+
           </ul>
         </div>
       </div>

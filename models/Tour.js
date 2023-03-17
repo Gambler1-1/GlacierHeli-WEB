@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const tourSchema = new Schema({
+<<<<<<< Updated upstream
 
     name : { type: String, required: true },
 
@@ -23,10 +24,21 @@ const tourSchema = new Schema({
         type: String,
         required: true
     }
+=======
+    name: { type: String, required: true },
+    availability: { type: String, required: true },
+    imageUrl:
+    {type: String},
+  
+>>>>>>> Stashed changes
 },
     {
         timestamps: true
     });
 
 const Blog = mongoose.model('Tour', tourSchema);
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 module.exports = Blog;

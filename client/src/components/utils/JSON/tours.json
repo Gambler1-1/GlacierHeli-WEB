@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "The Eruption Escapade: Tour of Volcanic Eruption in Geldingadal",
+        "price": "49,000",
+        "duration": "1Hour",
+        "displayImage":"./../assets/images/aboutus.png",
+        "tourDetails": "sdwdwddw"
+    },
+    {
+        "id": 2,
+        "title": "Tales of Fire and of Ice; Þórisjökull Glacier and the Hengill Geothermal Area",
+        "price": "109,900",
+        "duration": "2Hour",
+        "displayImage":"images/tales.jpg",
+        "tourDetails": "sdwdwddw"
+    },
+    {
+        "id": 3,
+        "title": "The Bewildering Geothermal Tour: Hengill Geothermal Area",
+        "price": "49,550",
+        "duration": "1Hour",
+        "displayImage":"images/geothermal.jpg",
+        "tourDetails": "sdwdwddw"        
+    },
+    {
+        "id": 4,
+        "title": "Dazzling Delights Helicopter Tour: Reykjavik City with landing at Mount Esja",
+        "price": "29,000",
+        "duration": "2Hour",
+        "displayImage":"../assets/images/aboutus.png",
+        "tourDetails": "sdwdwddw"
+    },
+    {
+        "id": 5,
+        "title": "Helicopter tour from Akureyri: Explore the Askja Highland and surroundings",
+        "price": "69,000",
+        "duration": "2Hour",
+        "displayImage":"../../../assets/images/aboutus.png",
+        "tourDetails": "sdwdwddw"
+    },
+    {
+        "id": 6,
+        "title": "Helicopter tour from Akureyri:Game of thrones Filming Locations",
+        "price": "59,000",
+        "duration": "2Hour",
+        "displayImage":"images/game.jpeg",
+        "tourDetails": "sdwdwddw"
+    }
+]

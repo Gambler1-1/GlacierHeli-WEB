@@ -87,7 +87,7 @@ const Tour = () => {
             </p>
             <br />
             <h2 className='font-bold'>Total Tour Time And Distance</h2>
-            <ul class="list-disc text-[15px] text-lg list-inside italic">
+            <ul class="list-disc text-[15px] text-lg list-inside">
             <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Beitarhúsið, Möðrudalur </li>
               <li className='flex'> Total tour time &nbsp; <FaClock className='text-[#50A477]' />&nbsp; 15-20 minutes (may fluctuate)</li>
               

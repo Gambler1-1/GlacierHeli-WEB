@@ -84,7 +84,7 @@ const Tour = () => {
             <h2 className=' text-2xl font-bold'>Best way to get to Mount Askja</h2>
             <p>Going to Askja caldera by road is a tedious task in itself. The F-roads leading towards the cliff include two river crossings, lava fields, and mushy sandy sections. Which is a 4-hour long risky drive. So for that reason, we prefer you to book our thrilling ride from Modrudalur toward Mount Askja this year. And enjoy the alluring affairs of radiant waters, fumes of Askja, hot springs, and much more in the area.<br /><br /></p>
             <h2 className=' text-2xl font-bold'>Total tour Time and distance</h2>
-            <ul class="list-disc text-[15px] text-lg list-inside italic">
+            <ul class="list-disc text-[15px] text-lg list-inside ">
               <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Beitarhúsið, Möðrudalur </li>
               <li className='flex'> Total tour time &nbsp; <FaClock className='text-[#50A477]' />&nbsp; 70-90 minutes (may fluctuate)</li>
               <li className='flex'>Total distance from Möðrudalur: &nbsp; <FaMapMarkerAlt className='text-[#50A477]' />  &nbsp;51 kilometers (32 miles)</li>

@@ -115,7 +115,7 @@ const Tour = () => {
                         <ul>
                             <li className="py-2 border-gray-200 border-solid border-b">
                                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                                    <h3 className="uppercase p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
+                                    <h3 className="capitalize p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
                                         What to Bring on the helicopter tour?              </h3>
                                     <div
                                         className="cursor-pointer"
@@ -125,7 +125,7 @@ const Tour = () => {
                                     >
                                         {question === 0 ? (
                                             <svg
-                                                className="rounded-full p-4"
+                                                className="rounded-full mr-4"
                                                 style={{ background: "#002D51" }}
                                                 viewBox="0 0 24 24"
                                                 fill="white"
@@ -137,7 +137,7 @@ const Tour = () => {
                                             </svg>
                                         ) : (
                                             <svg
-                                                className="rounded-full"
+                                                className="rounded-full mr-4"
                                                 style={{ background: "#002D51" }}
                                                 viewBox="0 0 24 24"
                                                 fill="white"
@@ -158,7 +158,7 @@ const Tour = () => {
                             </li>
                             <li className="pb-2 border-gray-200 border-solid border-b">
                                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                                    <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                                    <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                                         Is Mount Esja active?
                                     </h3>
                                     <div
@@ -169,7 +169,7 @@ const Tour = () => {
                                     >
                                         {question === 1 ? (
                                             <svg
-                                                className="rounded-full"
+                                                className="rounded-full mr-4"
                                                 style={{ background: "#002D51" }}
                                                 viewBox="0 0 24 24"
                                                 fill="white"
@@ -181,7 +181,7 @@ const Tour = () => {
                                             </svg>
                                         ) : (
                                             <svg
-                                                className="rounded-full"
+                                                className="rounded-full mr-4"
                                                 style={{ background: "#002D51" }}
                                                 viewBox="0 0 24 24"
                                                 fill="white"
@@ -202,7 +202,7 @@ const Tour = () => {
                             </li>
                             <li className="pb-2 border-gray-200 border-solid border-b">
                                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                                    <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                                    <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                                         Can I see Steinn from above?
                                     </h3>
                                     <div
@@ -213,7 +213,7 @@ const Tour = () => {
                                     >
                                         {question === 2 ? (
                                             <svg
-                                                className="rounded-full"
+                                                className="rounded-full mr-4"
                                                 style={{ background: "#002D51" }}
                                                 viewBox="0 0 24 24"
                                                 fill="white"
@@ -225,7 +225,7 @@ const Tour = () => {
                                             </svg>
                                         ) : (
                                             <svg
-                                                className="rounded-full"
+                                                className="rounded-full mr-4"
                                                 style={{ background: "#002D51" }}
                                                 viewBox="0 0 24 24"
                                                 fill="white"
@@ -246,7 +246,7 @@ const Tour = () => {
                             </li>
                             <li className="pb-2 border-gray-200 border-solid border-b">
                                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                                    <h3 className="p-4 uppercase text-gray-800 text-xs font-bold md:text-lg text-white xl:text-[20px]">
+                                    <h3 className="p-4 capitalize text-gray-800 text-xs font-bold md:text-lg text-white xl:text-[20px]">
                                         What is the best time of year for a helicopter tour of Mount Esja?
 
                                     </h3>
@@ -258,7 +258,7 @@ const Tour = () => {
                                     >
                                         {question === 3 ? (
                                             <svg
-                                                className="rounded-full"
+                                                className="rounded-full mr-4"
                                                 style={{ background: "#002D51" }}
                                                 viewBox="0 0 24 24"
                                                 fill="white"
@@ -270,7 +270,7 @@ const Tour = () => {
                                             </svg>
                                         ) : (
                                             <svg
-                                                className="rounded-full"
+                                                className="rounded-full mr-4"
                                                 style={{ background: "#002D51" }}
                                                 viewBox="0 0 24 24"
                                                 fill="white"

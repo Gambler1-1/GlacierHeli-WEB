@@ -165,7 +165,7 @@ const Tour = () => {
             <ul>
               <li className="py-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477]  rounded-lg">
-                  <h3 className="uppercase p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
+                  <h3 className="capitalize p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
                     Why is this tour called tales of ice and fire?
                   </h3>
                   <div

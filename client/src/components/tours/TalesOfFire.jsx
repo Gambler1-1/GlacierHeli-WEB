@@ -88,7 +88,7 @@ const Tour = () => {
               The latest 2022 eruption drove many people to the active site in the land of fire and ice. The volcano is approximately 385 meters (1,263 feet) above sea level. Our expert guides will take you from Reykjavik city to explore the lava fields.
               <br /><br /></p>
             <h2 className='font-bold'>Total Tour Time And Distance</h2>
-            <ul class="list-disc text-[15px] text-lg list-inside italic">
+            <ul class="list-disc text-[15px] text-lg list-inside ">
               <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Ace FBO Reykjavík City</li>
               <li className='flex'> Total tour time &nbsp; <FaClock className='text-[#50A477]' />&nbsp; 35-40 minutes (may fluctuate)</li>
               <li className='flex'>Total distance from Reykjavík &nbsp; <FaMapMarkerAlt className='text-[#50A477]' />  &nbsp; 32 kilometers (20 miles)</li>

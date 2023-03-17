@@ -23,8 +23,8 @@ const HomeComponent4 = () => {
                             </div>
                             <img src={image1} alt='example' className='w-full h-80 object-cover rounded-md' />
                             <div className='absolute bottom-0 left-0 w-full py-2 px-2 text-white font-bold'>
-                                <p className='text-2xl'>
-                                    <p className='lg:text-2xl  text-center mb-2'>
+                                <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
+                                    <p className='text-white capitalize text-center text-lg font-bold '>
                                         A Thrilling Heli Ride from Modrudalur toward Mount Askja
 
 
@@ -32,12 +32,12 @@ const HomeComponent4 = () => {
 
                                     <div className='flex justify-between'>
                                         <div className='text-[#F7C033] flex'>
-                                            <FontAwesomeIcon icon={faClock} className='lg:h-8 whitespace-normal' />
-                                            <div className="lg:text-1xl text-[15px] font-semibold">
+                                            <FontAwesomeIcon icon={faClock} className='lg:h-6 pt-1 pr-2' />
+                                            <div className="lg:text-1xl text-[18px] font-semibold">
                                                 <h1>   70 Mins</h1>
                                             </div>
                                         </div>
-                                        <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
+                                        <div className='bg-[#F7C033] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
 
                                             <div>59,000 ISK</div>
                                         </div>
@@ -56,8 +56,8 @@ const HomeComponent4 = () => {
                             </div>
                             <img src={image3} alt='example' className='w-full h-80 object-cover rounded-md' />
                             <div className='absolute bottom-0 left-0 w-full py-2 px-2 text-white font-bold'>
-                                <p className='text-2xl'>
-                                    <p className='lg:text-2xl  text-center mb-2'>
+                                <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
+                                    <p className='text-white capitalize text-center text-lg font-bold '>
                                         Stuðlagil Canyon Helicopter Tour
 
 
@@ -65,14 +65,14 @@ const HomeComponent4 = () => {
 
                                     <div className='flex justify-between'>
                                         <div className='text-[#F7C033] flex'>
-                                            <FontAwesomeIcon icon={faClock} className='lg:h-8' />
-                                            <div className="lg:text-1xl text-[15px] font-semibold">
+                                            <FontAwesomeIcon icon={faClock} className='lg:h-6 pt-1 pr-2' />
+                                            <div className="lg:text-1xl text-[18px] font-semibold">
                                                 <h1> 60 Mins</h1>
                                             </div>
                                         </div>
                                         <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
 
-                                            <div>56,999 ISK</div>
+                                            <div>45,500 ISK</div>
                                         </div>
                                     </div>
                                 </p>
@@ -98,8 +98,8 @@ const HomeComponent4 = () => {
                             </div>
                             <img src={image2} alt='example' className='w-full h-80 object-cover rounded-md' />
                             <div className='absolute bottom-0 left-0 w-full py-2 px-2 text-white font-bold'>
-                                <p className='text-2xl'>
-                                    <p className='lg:text-2xl  text-center mb-2'>
+                                <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
+                                    <p className='text-white capitalize text-center text-lg font-bold '>
                                     Modrudalur Kettle Holes: Helicopter Ride Experience
 
 
@@ -107,14 +107,14 @@ const HomeComponent4 = () => {
 
                                     <div className='flex justify-between'>
                                         <div className='text-[#F7C033] flex'>
-                                            <FontAwesomeIcon icon={faClock} className='lg:h-8' /><br />
-                                            <div className="lg:text-1xl text-[15px] font-semibold">
+                                            <FontAwesomeIcon icon={faClock} className='lg:h-6 pt-1 pr-2' /><br />
+                                            <div className="lg:text-1xl text-[18px] font-semibold">
                                                 <h1> 25 Mins</h1>
                                             </div>
                                         </div>
                                         <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
 
-                                            <div>27500 ISK</div>
+                                            <div>27,500 ISK</div>
                                         </div>
                                     </div>
                                 </p>

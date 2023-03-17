@@ -4,9 +4,9 @@ const HomeComponent3 = () => {
   return (
    <div className='bg-[#50A477] py-8'>
       <div className="font-bold text-2xl uppercase text-white text-center">
-        All our tours include free pick and drop in Reykjavik.
+        All our tours include free pick and drop in Reykjavik
       </div>
-      <div className='text-center font-bold text-[15px] pt-4 text-white'>
+      <div className='text-center font-bold text-[16px] pt-4 text-white'>
         Note: Min 4 Passengers required to operate the flight (In total, not per booking)
 
 

@@ -18,25 +18,29 @@ const TourComponent3 = () => {
         </div>
         <img src={rejkavik} alt='rejkavik' className='w-[90px] h-[90px]' />
       </div>
-      <div className='flex flex-col md:flex-row md:justify-center'>
+      <div className='flex flex-col gap-2 md:flex-row md:justify-center'>
         <div className='flex flex-col md:w-1/2' >
           <div className=''>
             <Link to='/Eruption-Escapade'>
-              <div className='relative hover:scale-105 transition duration-500 cursor-pointer'>
-                <div className='absolute top-0 left-0 bg-[#50A477] text-white font-bold text-lg px-2 py-1 rounded-tr-lg'>
+              <div className='relative hover:scale-105 transition duration-500 cursor-pointer'>                
+                <div className='flex flex-row justify-between'>
+                  </div>
+                  <div className='absolute top-0 left-0 bg-[#50A477] text-white font-bold text-lg px-2 py-1 rounded-tr-lg'>
                   ★★★★★
                 </div>
                 <img src={image1} alt='example' className='w-full h-80 object-cover rounded-md' />
                 <div className='absolute bottom-0 left-0 w-full py-2 px-2 text-white font-bold'>
-                  <p className='text-2xl'>
-                    <p className='lg:text-1xl  text-center mb-2'>A Flashing Heli Ride; Reykjavik City And Mount Esja
+                  <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
+                    <p className='text-white capitalize text-center text-lg font-bold '>A Flashing Heli Ride; Reykjavik City And Mount Esja
                     </p>
 
                     <div className='flex justify-between'>
-                      <div className='text-[#F7C033] flex'>
-                        <FontAwesomeIcon icon={faClock} className='lg:h-8' />
-                        <div className="lg:text-1xl text-[15px] font-semibold">
-                          <h1> 1 Hour</h1>
+                      <div className='text-[#F7C033] flex '>
+                        
+                        <FontAwesomeIcon icon={faClock} className='lg:h-6  pr-2' />
+                      
+                        <div className="lg:text-1xl text-[18px] font-semibold">
+                          <h1> 40 Mins</h1>
                         </div>
                       </div>
                       <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
@@ -49,6 +53,7 @@ const TourComponent3 = () => {
               </div>
             </Link>
           </div>
+          
           <Link to='/Bewildering-Geothermal'>
 
             <div className='relative hover:scale-105 transition mt-6 duration-500 cursor-pointer'>
@@ -57,15 +62,15 @@ const TourComponent3 = () => {
               </div>
               <img src={image3} alt='example' className='w-full h-80 object-cover rounded-md' />
               <div className='absolute bottom-0 left-0 w-full py-2 px-2 text-white font-bold'>
-                <p className='text-2xl'>
-                  <p className='lg:text-2xl  text-center mb-2'>Tales Of Ice And Fire; The ÞÓRISJÖKULL And Hengill Tour
+                <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
+                  <p className='text-white capitalize text-center text-lg font-bold '>Tales Of Ice And Fire; The ÞÓRISJÖKULL And Hengill Tour
                   </p>
 
                   <div className='flex justify-between'>
                     <div className='text-[#F7C033] flex'>
-                      <FontAwesomeIcon icon={faClock} className='lg:h-8' />
-                      <div className="lg:text-1xl text-[15px] font-semibold">
-                        <h1> 1 Hour</h1>
+                      <FontAwesomeIcon icon={faClock} className='lg:h-6  pr-2' />
+                      <div className="lg:text-1xl text-[18px] font-semibold">
+                        <h1> 130 Mins </h1>
                       </div>
                     </div>
                     <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
@@ -78,7 +83,8 @@ const TourComponent3 = () => {
             </div>
           </Link>
         </div>
-        <div className='flex flex-col md:w-1/2 px-4'>
+        <br />
+        <div className='flex flex-col md:w-1/2'>
           <Link to='/TalesOfFire'>
             <div className='relative hover:scale-105 transition duration-500 cursor-pointer'>
               <div className='absolute top-0 left-0 bg-[#50A477] text-white font-bold text-lg px-2 py-1 rounded-tr-lg'>
@@ -86,16 +92,16 @@ const TourComponent3 = () => {
               </div>
               <img src={image2} alt='example' className='w-full h-80 object-cover rounded-md' />
               <div className='absolute bottom-0 left-0 w-full py-2 px-2 text-white font-bold'>
-                <p className='text-2xl'>
-                  <p className='lg:text-2xl  text-center mb-2'>Do you have the Guts to visit Fagradalsfjall Volcano
+                <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
+                  <p className='text-white capitalize text-center text-lg font-bold '>Do you have the Guts to visit Fagradalsfjall Volcano
 
                   </p>
 
                   <div className='flex justify-between'>
                     <div className='text-[#F7C033] flex'>
-                      <FontAwesomeIcon icon={faClock} className='lg:h-8' />
-                      <div className="lg:text-1xl text-[15px] font-semibold">
-                        <h1> 1 Hour</h1>
+                      <FontAwesomeIcon icon={faClock} className='lg:h-6  pr-2' />
+                      <div className="lg:text-1xl text-[18px] font-semibold">
+                        <h1>40 Mins</h1>
                       </div>
                     </div>
                     <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
@@ -116,8 +122,8 @@ const TourComponent3 = () => {
               </div>
               <img src={image4} alt='example' className='w-full h-80 object-cover rounded-md' />
               <div className='absolute bottom-0 left-0 w-full py-2 px-2 text-white font-bold'>
-                <p className='text-2xl'>
-                  <p className='lg:text-2xl  text-center mb-2'>
+                <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
+                  <p className='text-white capitalize text-center text-lg font-bold '>
                     The Hengil Valcano : Helicopter tour!
 
 
@@ -125,9 +131,9 @@ const TourComponent3 = () => {
 
                   <div className='flex justify-between'>
                     <div className='text-[#F7C033] flex'>
-                      <FontAwesomeIcon icon={faClock} className='lg:h-8' />
-                      <div className="lg:text-1xl text-[15px] font-semibold">
-                        <h1> 1 Hour</h1>
+                      <FontAwesomeIcon icon={faClock} className='lg:h-6  pr-2' />
+                      <div className="lg:text-1xl text-[18px] font-semibold">
+                        <h1>60 Mins</h1>
                       </div>
                     </div>
                     <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>

@@ -6,6 +6,9 @@ import { faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
 
 import Form from '../utils/Form2';
+import reyktour1 from '../assets/images/Rtour1image1.jpeg'
+import reyktour2 from '../assets/images/Rtour1image2.jpeg'
+import reyktour3 from '../assets/images/Rtour1image3.jpeg'
 
 const Tour = () => {
 
@@ -78,11 +81,23 @@ const Tour = () => {
                     <div className='text-[15px] text-justify text-lg'>
                         <p>In the land of ice and fire, enjoy the outshining views of Reykjavík city and admire the beauty of Mount Esja. The thrill is doubled when you catch the sights of charcoal gray peaks, basalt and tuff rocks, and multicolored rooftops. Not to forget the sparkling summer blues and elevated hiking trails!</p>
                         <br />
+                        <img
+                            src={reyktour1}
+                            alt='example'
+                            className='w-full h-[400px] object-cover rounded-md'
+                        />
+                        <br />
                         <h2 className='font-bold text-2xl'>About Mount Esja</h2>
                         <p>Mount Esja, also called Esjan (carved stone) range, is located 10 km east of Reykjavík. Although it’s flat-topped, you'll also find a big rock called Steinn. Its highest peak is at 914 meters (about 3,000 feet). The sheer size of this range makes it a landmark of Reykjavík city. <br /><br /></p>
                         <p>Although it's flat-topped, Its highest peak is at 914 meters (about 3,000 feet). Some estimates claim that it may be 3.2 million years old. Its formation and date make it popular among geologists and tourists alike. And because of its heavenly views, it's getting more popular daily.<br /><br /></p>
                         <h3 className='font-bold text-2xl'>Best Way to Get to Mt Esja</h3>
                         <p>By air is the easiest way to get to mount esja from  Reykjavík city. The good news is that we at Glacier Heli provide the most time-efficient combo tour from <span className='font-bold'>Reykjavík city to Mount Esja</span> . We’ll provide you with an unparalleled and unforgettable adventure, with you longing to visit the mountain on our helicopter tour again.  </p>
+                        <br />
+                        <img
+                            src={reyktour2}
+                            alt='example'
+                            className='w-full h-[400px] object-cover rounded-md'
+                        />
                         <br />
                         <h2 className='font-bold text-2xl'>Total tour Time and distance</h2>
                         <ul className="text-[15px] text-lg list-inside">
@@ -94,6 +109,13 @@ const Tour = () => {
                         </ul>
                         <br />
                         <h2 className='font-bold text-2xl'>What Will You See From The Chopper?</h2>
+                        <br />
+                        <img
+                            src={reyktour3}
+                            alt='example'
+                            className='w-full h-[400px] object-cover rounded-md'
+                        />
+                        <br />
                         <p>You will get to see an immense view of Reykjavik city itself. Find yourself passing through the vast sapphire and aquamarine ocean <span className='italic'>(Faxaflói Bay)</span> , engulfing the city shore and colorful settlements dotting the vast Arctic.
 
                             <br /><br /></p>

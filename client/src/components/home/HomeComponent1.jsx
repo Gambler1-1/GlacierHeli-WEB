@@ -11,7 +11,7 @@ const homeComponent1 = () => {
         </video>
       </div>
       <div class="absolute inset-x-1/4 inset-y-[37%] text-white font-bold text-center">
-        <h1 className="lg:text-4xl italic uppercase text-5xl">
+        <h1 className="lg:text-5xl italic uppercase text-5xl">
         Be flying high with us!
         </h1>
       </div>

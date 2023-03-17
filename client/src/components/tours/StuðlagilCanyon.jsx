@@ -6,6 +6,9 @@ import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
 import image from '../assets/images/studlagil.png'
+import northtour1 from '../assets/images/Ntour2image3.jpeg'
+import northtour2 from '../assets/images/Ntour2image4.jpeg'
+import northtour3 from '../assets/images/Ntour2image2.jpeg'
 
 import props from "react";
 
@@ -94,6 +97,12 @@ const Tour = () => {
             <p className='font-bold'>What does the name suggest?</p>
             <p>Studlaberg in Icelandic means “basalt column.” Gil means “ravine or gorge.” Now, we know the region as the combination of these words: Stuðlagil, or (literally) basalt gorge.</p>
             <br />
+            <img
+              src={northtour1}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <p className='font-bold'>How did it form? </p>
             <p>Just before 2016, not even Icelandic natives knew about Stuðlagil. The gorge was completely submerged by the glacial waters. It would have stayed that way had the water not been diverted for Fljótsdalur Power Station in 2007-2008. </p>
             <br />
@@ -104,9 +113,15 @@ const Tour = () => {
             <p>Officially, there are two ways to get to Stuðlagil canyon. One is by a gravel road which is quite a task. Because the road is full of bumpy marble-like rocks and operates two-way traffic. So, travelers face difficulty throughout the freeway.<br /><br /></p>
             <p>The second one is through the Helicopter Ride from Möðrudalur. Going by Helicopter is way more comfortable and saves you time as well. Another reason we don’t prefer visitors to go by road is that there are no signs or clear tags, also it's not very family friendly. By choosing our Stuðlagil canyon helicopter tour. You will get a safe and secure ride right on time. And you’d be able to enjoy the breathtaking views of basalt rocks and lushy green rivers without any worries. <br /><br /></p>
             <br />
+            <img
+              src={northtour3}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <h2 className='font-bold'>Total Tour Time and Distance</h2>
             <ul class="list-disc text-[15px] text-lg list-inside">
-            <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Beitarhúsið, Möðrudalur </li>
+              <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Beitarhúsið, Möðrudalur </li>
               <li className='flex'> Total tour time &nbsp; <FaClock className='text-[#50A477]' />&nbsp; 50-60 minutes (may fluctuate)</li>
               <li className='flex'>Total distance from Möðrudalur: &nbsp; <FaMapMarkerAlt className='text-[#50A477]' />  &nbsp;36 kilometers (22 miles)</li>
               <li className='flex'> Sightseeing Destination/ Time: &nbsp;<FaPlaneArrival className='text-[#50A477]' /> &nbsp; Stuðlagil canyon / 15-20 Min</li>
@@ -117,9 +132,20 @@ const Tour = () => {
             <p className='font-bold'>Places you will get to see on StuðlagilCanyon Tour</p>
             <p>On the way to Stuðlagil Canyon, you will be able to enjoy the calming views of Studlafoss Waterfall, alluring ponds of multiple shades, and nearby farms as well as lush greens. <br /><br /></p>
             <p className='font-bold underline italic'>Studlafoss Waterfall</p>
+
+            <p>Stuðlafoss is a gleaming jewel of a waterfall in South Iceland. River Fossá is the major water source of the fall, dropping a whopping 30 meters (100 feet).</p>
+            <p>At the base of the waterfall, you can find a turquoise pool to relax and admire the natural wonder. The landscape around provides a rugged look at rock formation, spersed with lush green vegetation. </p>
+            <p>We will fly over the waterfall, with the nearby town of Kirkjubæjarklaustur visible in the distance. However, if the weather permits, we will land near the waterfall.
+            </p>
             <p>
               After you get off the helicopter at Stuðlagil Canyon, you will be taken aback by the periwinkle blue and green colors of the gorge river, alongside 20 - 30 m high basalt columns. These basalt column forms when still magma cools down, resulting in form of hexagonal-shaped volcanic basalt rocks. That’s one of the major factors which makes it unique from other popular places in Iceland.
             </p>
+            <br />
+            <img
+              src={northtour2}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
             <br />
             <p>Moreover, The breathtaking views of StuðlagilCanyon will be your perfect spot for instagrammable shots. With our Stuðlagil Canyon Helicopter Tour, you’ll get an experience like never before.</p>
             <br />
@@ -149,13 +175,14 @@ const Tour = () => {
 
             </ul>
           </div>
-          <h3 className='font-bold underline'>FAQ’s</h3>
+          <br />
+          <h1 className='font-semi-bold text-4xl text-[#062C52]'>FAQ's</h1>
 
           <div className="w-full mx-auto mt-4">
             <ul>
               <li className="py-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="uppercase p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
+                  <h3 className="capitalize p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
                     What is the best time to visit Stuðlagil Canyon?
                   </h3>
                   <div
@@ -166,7 +193,7 @@ const Tour = () => {
                   >
                     {question === 0 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -178,7 +205,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -199,7 +226,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                     Can I camp in Stuðlagil Canyon?
                   </h3>
                   <div
@@ -210,7 +237,7 @@ const Tour = () => {
                   >
                     {question === 1 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -222,7 +249,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -243,7 +270,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                     Is Stuðlagil Canyon man-made?
                   </h3>
                   <div
@@ -254,7 +281,7 @@ const Tour = () => {
                   >
                     {question === 2 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -266,7 +293,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"

@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
+import northtour1 from '../assets/images/Ntour1image2.jpeg'
+import northtour2 from '../assets/images/Ntour1image3.jpeg'
+import northtour3 from '../assets/images/Ntour1image4.jpeg'
+import northtour4 from '../assets/images/Ntour1image5.jpeg'
 
 const Tour = () => {
   const [question, setquestion] = useState(0);
@@ -81,6 +85,12 @@ const Tour = () => {
             <h2 className=' text-2xl font-bold'>About Mount Askja</h2>
             <p>Mount Askja (Icelandic for “caldera”) is located in the Vatnajökull Glacier National Park of Iceland. It’s 1,516 meters (4,974 feet) high volcanic crater with a 200 m deep lake inside. Alongside a round milky geothermal lake. The famous Askja belongs to the Dyngjufjöll mountain range.<br /><br /></p>
             <p>Over 10,000 years ago, Mount Askja erupted, forcing the lava chamber roof to collapse, forming the largest caldera in Iceland, an 8 km (5 miles) long and 200 m (656 feet) depressed lake now known as Lake Öskjuvatn. Even though its base is submerging day by day. Askja mountain is an active volcano site. With several powerful volcanic eruptions in the past. It became very popular among other active volcanoes in Iceland. The last major eruption that took place in 1961 produced about 0.1 km of lava. Even though its base is submerging day by day.<br /><br /></p>
+            <img
+              src={northtour1}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <h2 className=' text-2xl font-bold'>Best way to get to Mount Askja</h2>
             <p>Going to Askja caldera by road is a tedious task in itself. The F-roads leading towards the cliff include two river crossings, lava fields, and mushy sandy sections. Which is a 4-hour long risky drive. So for that reason, we prefer you to book our thrilling ride from Modrudalur toward Mount Askja this year. And enjoy the alluring affairs of radiant waters, fumes of Askja, hot springs, and much more in the area.<br /><br /></p>
             <h2 className=' text-2xl font-bold'>Total tour Time and distance</h2>
@@ -93,6 +103,12 @@ const Tour = () => {
 
             </ul>
             <br />
+            <img
+              src={northtour2}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <h2 className=' text-2xl font-bold'> What will you see from above?</h2>
             <p>Y​​ou will be in awe of the Icelandic highland’s magnificence as we soar approach the Askja Caldera.</p>
             <p>After Taking off from the pickup point, the sights of the Möðrudalur settlement will amaze you. And you will be fascinated by the multicolored turf houses and structures below. When compared to the expanse of greenery around, they will appear miniature.
@@ -101,9 +117,23 @@ const Tour = () => {
             <ul class="list-disc text-[15px] text-lg list-inside">
               <li class="font-bold">Grafarlandsfoss</li>
               <p>Grafarlandsfoss is a small waterfall nestled in fresh green meadow plains on the way to Lake Askja. Its waters appear frothy from above as it is a steep cascade. You might also see shrubbery flowers blooming in the early summertime from above. </p>
+              <br />
               <li class="font-bold">Herðubreið Mountain </li>
+              <img
+              src={northtour3}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
               <p>On your way to Askja Caldera, you’ll get a breathtaking glimpse of Iceland’s national mountain, Herðubreið Mountain. It is situated 34 kilometers (21 miles) from Askja crater and 87 kilometers (51 miles) from Modrudalur. The beautiful high table Mount Herdubreid (1682 meters in height) is covered with snow throughout the year. People named it Iceland’s highland queen because of its beauty. </p>
+              <br />
               <li class="font-bold">Ódáðahraun desert </li>
+              <img
+              src={northtour4}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
               <p>The Ódáðahraun desert is a 46000 square kilometer barren region of otherworldly topography and spanning lava fields. Due to the ruggedness of the region, the desert inspires fear among the locals and was a major hideout for the outlaws. Coincidentally, you’ll also have a view of Herðubreiðarlindir (oasis) in the Highland of Iceland.   </p>
             </ul>
             <br />
@@ -158,13 +188,13 @@ const Tour = () => {
                         </li>
                     </ul> */}
           <br />
-          <h3 className='font-bold underline'>FAQ’s</h3>
+          <h1 className='font-semi-bold text-4xl text-[#062C52]'>FAQ's</h1>
 
           <div className="w-full mx-auto mt-4">
             <ul>
               <li className="py-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="uppercase p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
+                  <h3 className="capitalize p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
                     What to Bring on the Askja Tour?
                   </h3>
                   <div
@@ -175,7 +205,7 @@ const Tour = () => {
                   >
                     {question === 0 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -187,7 +217,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -208,7 +238,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                     Is the meal included in the tour?
                   </h3>
                   <div
@@ -219,7 +249,7 @@ const Tour = () => {
                   >
                     {question === 1 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -231,7 +261,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -252,7 +282,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                     Is landing included in the tour?
                   </h3>
                   <div
@@ -263,7 +293,7 @@ const Tour = () => {
                   >
                     {question === 2 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -275,7 +305,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -296,7 +326,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-xs font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-xs font-bold md:text-lg text-white xl:text-[20px]">
                     When is the best time to visit the Icelandic volcano?
                   </h3>
                   <div
@@ -307,7 +337,7 @@ const Tour = () => {
                   >
                     {question === 3 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -319,7 +349,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"

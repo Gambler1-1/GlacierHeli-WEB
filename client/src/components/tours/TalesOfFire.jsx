@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
+import reyktour1 from '../assets/images/Rtour2image1.jpeg'
+import reyktour2 from '../assets/images/Rtour2image2.jpeg'
+import reyktour3 from '../assets/images/Rtour2image3.jpeg'
+import reyktour4 from '../assets/images/Rtour2image4.jpeg'
 
 const Tour = () => {
   const [question, setquestion] = useState(0);
@@ -77,6 +81,13 @@ const Tour = () => {
             <p>Then dare to explore the Fagradalsfjall Volcano in the Land of Ice and Fire.<br /><br /></p>
             <h2 className='font-bold'>The Rise of Fagradalsfjall Volcano</h2>
             <p>The Fagradalsfjall volcano in Iceland was smoked out in the Meradalir valley of Reykjanes Peninsula. It was discovered when the lava beneath the thick ice chunks flared out in the southwest of Reykjavik. Such volcanoes are extremely rare and are frequently referred to as tuya (SubGlacial Volcano). This tuya volcano is now considered one of the newest volcanic systems, erupting in 2022 after 800 years of dormancy.<br /><br /></p>
+            <br />
+            <img
+              src={reyktour1}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <p className='font-bold '>About the name</p>
             <p>The name is a compound of the Icelandic words <span className='italic'>(beautiful, valley)</span> , often pronounced as Fagradalsfjall (Fa-Gra-Dals-Fyak). <br /><br /></p>
             <p className='font-bold '>Where is it located?</p>
@@ -98,9 +109,21 @@ const Tour = () => {
             <br />
             <h3 className='font-bold'>How to get to Fagradalsfjall?</h3>
             <p>Tourists have two options to get to Fagradalsfjall volcano, i.e., by road and by air. If you wanna avoid the road hustle and muddy, slippery hiking trails, then join us on our <span className='font-bold'></span> Fagradalsfjall Volcano tour. We guarantee you would want to take advantage of the completely hellish view from above.<br /><br /></p>
+            <br />
+            <img
+              src={reyktour2}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <h2 className='font-bold'>All about our Fagradalsfjall Helicopter volcano tour </h2>
             <p> <span className='font-bold'>Right after take off</span> Right after take off, you’ll catch some breathtaking views of Reykjavik city. It’s multicolor rooftops, the famous BlueLagoon spa, lush greens and blue lakes in between. More about it, you’ll also get to see the Hallgrimskirkja church and the Harpa Concert Hall.
               <br /><br /></p>
+            <img
+              src={reyktour3}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
             <p> <span className='font-bold'>Moving along</span> , your main attraction will be the fumes and scenic vistas of Geldingadalur Valley and Reykjanes Geopark. Our guide will not let you miss out on Gunnhver and Krýsuvík geothermal areas, where geothermal pools, fumaroles, and mud pots appear bizarrely alien. Over the horizon is the Reykjanesviti Lighthouse on the southwest coast, clearly visible from the volcano.
 
               <br /><br /></p>
@@ -111,6 +134,11 @@ const Tour = () => {
             <p> The rarely formed subglacial volcano looks like an epic formation of mother nature. You cannot miss the multicolored craters near the spatter, emitting fumes, signaling that there is no end to Earth’s core activity. And in a glimpse you’ll be amazed by the asphalt colors of ancient lava fields.
 
               <br /><br /></p>
+            <img
+              src={reyktour4}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
             <h2 className='font-bold'>Main Attractions </h2>
             <ul class="list-disc text-[15px] text-lg list-inside">
               <li>Reykjavik</li>
@@ -130,13 +158,13 @@ const Tour = () => {
             <p>For more information, contact us NOW to get the best packages.</p>
           </div>
           <br />
-          <h3 className='font-bold underline'>FAQ’s</h3>
+          <h1 className='font-semi-bold text-4xl text-[#062C52]'>FAQ's</h1>
 
           <div className="w-full mx-auto mt-4">
             <ul>
               <li className="py-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="uppercase p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
+                  <h3 className="capitalize p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
                     How strong was the eruption in 2022?
                   </h3>
                   <div
@@ -147,7 +175,7 @@ const Tour = () => {
                   >
                     {question === 0 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -159,7 +187,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -180,7 +208,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                     Can you visit the eruption site?
                   </h3>
                   <div
@@ -191,7 +219,7 @@ const Tour = () => {
                   >
                     {question === 1 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -203,7 +231,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -225,7 +253,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalizeuppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                     Is it safe?
                   </h3>
                   <div
@@ -236,7 +264,7 @@ const Tour = () => {
                   >
                     {question === 2 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -248,7 +276,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -269,7 +297,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-xs font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-xs font-bold md:text-lg text-white xl:text-[20px]">
                     Will Fagradalsfjall erupt again?
 
                   </h3>
@@ -281,7 +309,7 @@ const Tour = () => {
                   >
                     {question === 3 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -293,7 +321,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"

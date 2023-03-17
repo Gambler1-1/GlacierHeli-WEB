@@ -5,7 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
-
+import reyktour1 from '../assets/images/Rtour3image1.jpeg'
+import reyktour2 from '../assets/images/Rtour3image2.jpeg'
+import reyktour3 from '../assets/images/Rtour3image3.jpeg'
+import reyktour4 from '../assets/images/Rtour3image4.jpeg'
 
 const Tour = () => {
   const [question, setquestion] = useState(0);
@@ -75,7 +78,13 @@ const Tour = () => {
           <div className='text-[15px] text-justify text-lg'>
             <p>This is your sign to cherish the tales of ice and fire. Book our Combo Heli Ride from Reykjavik city to Þórisjökull and Hengill. And experience the Crisp glacier air tantalizing your senses, alongside the warmth of hot springs.
               <br /><br /></p>
-
+              
+            <img
+              src={reyktour1}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <h2 className=' lg:text-2xl text-[15px] mb-6 font-bold '>
               About the Destinations
             </h2>
@@ -93,11 +102,25 @@ const Tour = () => {
 
             </ul>
             <br />
+            <img
+              src={reyktour2}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
+            <br />
             <h2 className='font-bold'>Why should you take our helicopter ride?</h2>
             <p>This ice-fire helicopter flight is very unique in itself, as it concludes the duo landing. The pathways to this famous glacier are extensive and time-consuming. So, it’s better not to take the roads. Now the question pops up here! Is that, why you should take our heli ride? You should book us because our heli ride experiences are comfortable and time efficient.
               <br /><br /></p>
             <p>Moreover, During the journey toward the Thorisjokull glacier. As, we will fly you across the highest and most bedazzled waterfalls of Iceland; the famed Glymur! You'll feel the Crisp fresh glacier air tantalizing your senses, and the warmth of hot springs while you breathe.
               <br /><br /></p>
+              
+            <img
+              src={reyktour3}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <p className='font-bold'>All in all, This helicopter tour will save you from hours of hiking and will let you enjoy the panoramic sights just by sitting back in the sky.
               <br /><br /></p>
             <h2 className='font-bold'>Complete Tour Guide</h2>
@@ -142,6 +165,13 @@ const Tour = () => {
               <li className='flex'> Final Destination &nbsp;<FaClock className='text-[#50A477]' /> &nbsp;Ace FBO Reykjavík City</li>
             </ul>
             <br />
+            
+            <img
+              src={reyktour4}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <p className='font-bold'>Main Attractions</p>
             <ul class="list-disc text-[15px] text-lg list-inside">
               <li>Reykjavik City</li>
@@ -159,7 +189,7 @@ const Tour = () => {
             <p>Glacier Heli prizes itself for providing a complete package - our visite populaire if you will - with a comfortable ride. And two landing destinations, in one tour! If you want to get more information. Contact us!</p>
           </div>
           <br />
-          <h3 className='font-bold underline'>FAQ’s</h3>
+          <h1 className='font-semi-bold text-4xl text-[#062C52]'>FAQ's</h1>
 
           <div className="w-full mx-auto mt-4">
             <ul>
@@ -176,7 +206,7 @@ const Tour = () => {
                   >
                     {question === 0 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -188,7 +218,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -210,7 +240,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                     Is the Hengill volcanic system still active?
 
                   </h3>
@@ -222,7 +252,7 @@ const Tour = () => {
                   >
                     {question === 1 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -234,7 +264,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -257,7 +287,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                     Is it safe?
                   </h3>
                   <div
@@ -268,7 +298,7 @@ const Tour = () => {
                   >
                     {question === 2 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -280,7 +310,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -302,7 +332,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-xs font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-xs font-bold md:text-lg text-white xl:text-[20px]">
                     What to Bring to the Helicopter Tour?
 
 
@@ -315,7 +345,7 @@ const Tour = () => {
                   >
                     {question === 3 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -327,7 +357,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -350,29 +380,7 @@ const Tour = () => {
 
             </ul>
           </div>
-          <div className='border border-gray-400 p-4 mt-6'>
-            <div className='my-8 lg:grid lg:grid-cols-3'>
-              <div>
-                <h1 className='lg:text-3xl font-semibold '>What's Included</h1>
-              </div>
-              <div className='lg:text-[25px] text-[15px]'>
-                <div>&#10003;  Landing</div>
-                <div>&#10003;  Experienced English Guide</div>
-              </div>
-
-
-            </div>
-            <div className='my-8 lg:grid lg:grid-cols-3'>
-              <div>
-                <h1 className='lg:text-3xl font-semibold'>Not Included</h1>
-              </div>
-              <div className='lg:text-[25px] text-[15px]'>
-                <div>&#9747; MEALS</div>
-              </div>
-
-
-            </div>
-          </div>
+          
         </div>
         <div class="col-span-2">
           <h1 className='text-center font-bold mt-10  lg:text-3xl'>BOOK THIS TOUR</h1>

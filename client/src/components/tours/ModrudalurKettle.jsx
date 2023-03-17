@@ -6,6 +6,9 @@ import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
 import props from "react";
+import northtour1 from '../assets/images/Ntour3image1.jpeg'
+import northtour2 from '../assets/images/Ntour3image2.jpeg'
+import northtour3 from '../assets/images/Ntour3image3.jpeg'
 
 const Tour = () => {
   const [question, setquestion] = useState(0);
@@ -77,9 +80,21 @@ const Tour = () => {
           <div className='text-[15px] text-lg text-justify'>
             <p>Join us in a one-of-a-kind helicopter ride experience of Modrudalur Kettle Holes (Small Ponds) located in the North-Eastern region of Iceland. A mysterious place that has never been explored by any tour agency in Iceland except Glacierheli.is. The leading cause this place has remained unrevealed is that the Möðrudalsleið road is incomplete and closed for any kind of movement. But now it's possible to enjoy the breathtaking views from above by helicopter.We are offering a complete tour of these dazzling kettles around Modrudalur in the comfort of our Helicopter Ride. For more information, please stick with us to the very end.<br /><br /></p>
             <h2 className='font-bold'>How do these kettle holes form?</h2>
+            <img
+              src={northtour1}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <p>In general, some specific conditions or geological abnormalities result in a jökulhlaup impact i.e overflow of water due to floods, Glacier receding (melting of ice chunks) , Seismic activity (earthquakes) , and Volcanic activity.<br /><br /></p>
             <p>Kettle Holes are shallow ponds formed in outwash plains, or sandurs, at a glacier’s toe. Usually, such small ponds occur in the Southern Iceland region due to high volcanic activity. But after the reveal of these small ponds in Modrudalur in the northeastern region of Iceland. It is now possible to enjoy similar views of the southern region on the east side.  <br /><br /></p>
             <p className='font-bold'>Our helicopter ride is unique in this perspective because we are the only tour agency providing a helicopter ride towards Modrudalur kettle holes. <br /><br /></p>
+            <img
+              src={northtour2}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            <br />
             <h2 className='font-bold'>How does Modrudalur Kettle seem?</h2>
             <p>
               Even though these kettles look beautiful from the ground, they look quite ethereal from the sky. The water from above looks sparkling, almost turquoise. However, that is not the only hue. Depending upon the weather condition and the position of the sun, you will see shades of blue, green and muddy brown of the glacial water.
@@ -97,14 +112,22 @@ const Tour = () => {
             <h2 className='font-bold'>More about the Kettle Helicopter Tour</h2>
             <p>The tour we are providing is between 15-20 minutes. During the flight, you will get some fascinating views of small ponds. Please note that the landing near the kettle holes is subject to weather conditions. It is sometimes impossible to land safely here due to fierce winds and cloudy skies. So, we cannot assure the landing. </p>
             <p>We are the only tour agency currently providing our guests a unique way of exploring Icelandic natural phenomena.</p>
+            <br />
+            <img
+              src={northtour3}
+              alt='example'
+              className='w-full h-[400px] object-cover rounded-md'
+            />
+            
           </div>
-          <h3 className='font-bold underline'>FAQ’s</h3>
+          <br />
+          <h1 className='font-semi-bold text-4xl text-[#062C52]'>FAQ's</h1>
 
           <div className="w-full mx-auto mt-4">
             <ul>
               <li className="py-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="uppercase p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
+                  <h3 className="capitalize p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
                     Can I jump in the kettle holes?
                   </h3>
                   <div
@@ -115,7 +138,7 @@ const Tour = () => {
                   >
                     {question === 0 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -127,7 +150,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -148,7 +171,7 @@ const Tour = () => {
               </li>
               <li className="pb-2 border-gray-200 border-solid border-b">
                 <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 uppercase text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
+                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
                     How should I dress?
                   </h3>
                   <div
@@ -159,7 +182,7 @@ const Tour = () => {
                   >
                     {question === 1 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -171,7 +194,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -203,7 +226,7 @@ const Tour = () => {
                   >
                     {question === 2 ? (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"
@@ -215,7 +238,7 @@ const Tour = () => {
                       </svg>
                     ) : (
                       <svg
-                        className="rounded-full"
+                        className="rounded-full mr-4"
                         style={{ background: "#002D51" }}
                         viewBox="0 0 24 24"
                         fill="white"

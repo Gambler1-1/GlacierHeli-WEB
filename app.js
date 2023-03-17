@@ -13,11 +13,15 @@ app.use(cookieParser())
 const blogs = require("./routes/blogRoute");
 const users = require("./routes/userRoute");
 const tours = require("./routes/tourRoute");
+const orders = require("./routes/orderRoute");
+
 
 
 app.use("/api/v1", users)
 app.use("/api/v1", blogs)
 app.use("/api/v1/tours", tours)
+app.use("/api/v1", orders)
+
 
 const connectDatabase = require("./config/database")
 

@@ -5,11 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
-import Booking from '../utils/BookingForm'
 import reyktour1 from '../assets/images/Rtour4image1.jpeg'
 import reyktour2 from '../assets/images/Rtour4image2.jpeg'
 import reyktour3 from '../assets/images/Rtour4image3.jpeg'
 import reyktour4 from '../assets/images/Rtour4image4.jpeg'
+import Booking from '../utils/BookingForm';
+
 const Tour = () => {
   const [question, setquestion] = useState(0);
 
@@ -89,7 +90,6 @@ const Tour = () => {
             <p>
               Our helicopter ride is the best way to get to the Hengill volcano. This is because the pathway to hengill is quite extensive and time-consuming. Also, you cannot travel if you have your family with you. It is because the road is rough and dangerous, which is why the most comfortaable way is the Hengill Volcano helicopter tour.
             </p>
-            <br />
             <h2 className=' text-2xl font-bold'>Total tour Time and distance</h2>
             <ul class=" text-[15px] text-lg list-inside">
               <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Ace FBO Reykjavík City</li>
@@ -100,45 +100,16 @@ const Tour = () => {
 
 
             </ul>
-            <br />
             <h2 className=' text-2xl font-bold'>What You'll See From the Helicopter?</h2>
             <p>Mount Hengill is quite close to Reykjavik city. If you take a helicopter tour of Hengill, the sights of Reykjavik city will amaze you as the Black rocky terrain, covered with snow or shrubbery, all together give off a splendor exclusive to Reykjavik's surroundings.</p>
-            <br />
-            <img
-              src={reyktour1}
-              alt='example'
-              className='w-full h-[400px] object-cover rounded-md'
-            />
-            <br />
             <p>The sights included in this tour will be the dazzling Hellisheiði Plateau, Hengill Geothermal Area, Nesjavallavirkjun, Hellisheiðarvirkjun, Bláfjöll mountain range. Furthermore, the tour will also let you see a glimpse of the futuristic Hellisheidi Power Plant. This plant is of immense importance to Iceland as over 90% of houses in Iceland, and 99% of Reykjavik homes are heated by geothermal water.
             </p>
-            <br />
-            <img
-              src={reyktour2}
-              alt='example'
-              className='w-full h-[400px] object-cover rounded-md'
-            />
-            <br />
             <p>From a bird's eye view, you will see the infrastructure of Reykjavik - small colorful buildings, bustling streets, and beautiful coastlines and docks. You will recognize the area due to the steam vents, colorful hot springs, and impressive ruggedness. A little further, you might catch a fleeting glimpse of Þingvellir National Park. The park is a UNESCO Heritage sight with dramatic views.
             </p>
             <p>Hengill Geothermal Area; As you close in on Hengill, In the landing place of Hengill, which was named after the Hengill volcano; the landscape's unique, enthralling beauty will beseech your senses in a crackling deluge. The tour will sweep you across boiling mud pots, spectacular hot springs, and sheep gnawing on the lush green that carpets the landscape. These vast vistas of untouched landscapes provide an unfiltered view of the wonders of Iceland. You will see nature just as God intended it and created it.
             </p>
-            <br />
-            <img
-              src={reyktour3}
-              alt='example'
-              className='w-full h-[400px] object-cover rounded-md'
-            />
-            <br />
             <p>Hellisheiði plateau will always welcome you into its everlasting beauty. In winter, the white snow carpets the landscape as the sun ripples off of the sparkling Ice and casts rainbows into our eyes. It feels as if we are intruding on an isolated kingdom of Ice.</p>
             <p>Kristnitökuhraun Lava Field and Craters; On our way back, we will make a scenic aerial pass over Iceland's glorious capital; Reykjavik. The ebb and flow of texture, color, sights, and sounds will mesmerize your senses and make you want to stay and get lost in Iceland's untouched beauty.</p>
-            <br />
-            <img
-              src={reyktour4}
-              alt='example'
-              className='w-full h-[400px] object-cover rounded-md'
-            />
-            <br />
           </div>
 
 
@@ -160,211 +131,18 @@ const Tour = () => {
             </li>
             <li>Kristnitökuhraun Lava Field and Craters </li>
           </ul>
-          <br />
           <h2 className=' text-2xl font-bold'>Summing Up</h2>
           <p className=' text-lg'>To sum up, getting to Mount Hengill on a helicopter ride makes up for a thrilling tour. From high up in the air, you can appreciate the beauty of the mountain's rough landscape, snow-capped peaks, and bubbling geothermal areas.
             The ride is an adventure that will leave you with memories that will last a lifetime. The helicopter provides a unique perspective of Mount Hengill, allowing you to see parts of the mountain that are otherwise inaccessible by foot.
           </p>
-          <br />
-          <h1 className='font-semi-bold text-4xl text-[#062C52]'>FAQ's</h1>
-
-          <div className="w-full mx-auto mt-4">
-            <ul>
-              <li className="py-2 border-gray-200 border-solid border-b">
-                <div className="flex justify-between items-center bg-[#50A477]  rounded-lg">
-                  <h3 className="capitalize p-4 text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px] w-10/12">
-                    Why is this tour called tales of ice and fire?
-                  </h3>
-                  <div
-                    className="cursor-pointer"
-                    onClick={() =>
-                      question === 0 ? setquestion(null) : setquestion(0)
-                    }
-                  >
-                    {question === 0 ? (
-                      <svg
-                        className="rounded-full mr-4"
-                        style={{ background: "#002D51" }}
-                        viewBox="0 0 24 24"
-                        fill="white"
-                        height="40px"
-                        width="40px"
-                        {...props}
-                      >
-                        <path d="M8.7 14.7a1 1 0 01-1.4-1.4l4-4a1 1 0 011.4 0l4 4a1 1 0 01-1.4 1.4L12 11.42l-3.3 3.3z" />
-                      </svg>
-                    ) : (
-                      <svg
-                        className="rounded-full mr-4"
-                        style={{ background: "#002D51" }}
-                        viewBox="0 0 24 24"
-                        fill="white"
-                        height="40px"
-                        width="40px"
-                        {...props}
-                      >
-                        <path d="M15.3 9.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z" />
-                      </svg>
-                    )}
-                  </div>
-                </div>
-                {question === 0 && (
-                  <p className="p-2 text-gray-800 bg-white border-gray-800 border-2 text-sm xl:text-lg rounded-b-lg ">
-                    Because the tour concludes with duo landings.
-
-                  </p>
-                )}
-              </li>
-              <li className="pb-2 border-gray-200 border-solid border-b">
-                <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
-                    Is the Hengill volcanic system still active?
-
-                  </h3>
-                  <div
-                    className="cursor-pointer"
-                    onClick={() =>
-                      question === 1 ? setquestion(null) : setquestion(1)
-                    }
-                  >
-                    {question === 1 ? (
-                      <svg
-                        className="rounded-full mr-4"
-                        style={{ background: "#002D51" }}
-                        viewBox="0 0 24 24"
-                        fill="white"
-                        height="40px"
-                        width="40px"
-                        {...props}
-                      >
-                        <path d="M8.7 14.7a1 1 0 01-1.4-1.4l4-4a1 1 0 011.4 0l4 4a1 1 0 01-1.4 1.4L12 11.42l-3.3 3.3z" />
-                      </svg>
-                    ) : (
-                      <svg
-                        className="rounded-full mr-4"
-                        style={{ background: "#002D51" }}
-                        viewBox="0 0 24 24"
-                        fill="white"
-                        height="40px"
-                        width="40px"
-                        {...props}
-                      >
-                        <path d="M15.3 9.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z" />
-                      </svg>
-                    )}
-                  </div>
-                </div>
-                {question === 1 && (
-                  <p className="p-2 text-gray-800 bg-white border-gray-800 border-2 text-sm xl:text-[18px] rounded-b-lg font-semibold">
-                    Yes, the Volcanic site is still active. In fact, you can see cooled-down magma running down in the surroundings.
-
-
-                  </p>
-                )}
-              </li>
-              <li className="pb-2 border-gray-200 border-solid border-b">
-                <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 capitalize text-gray-800 text-sm font-bold md:text-lg text-white xl:text-[20px]">
-                    Is it safe?
-                  </h3>
-                  <div
-                    className="cursor-pointer"
-                    onClick={() =>
-                      question === 2 ? setquestion(null) : setquestion(2)
-                    }
-                  >
-                    {question === 2 ? (
-                      <svg
-                        className="rounded-full mr-4"
-                        style={{ background: "#002D51" }}
-                        viewBox="0 0 24 24"
-                        fill="white"
-                        height="40px"
-                        width="40px"
-                        {...props}
-                      >
-                        <path d="M8.7 14.7a1 1 0 01-1.4-1.4l4-4a1 1 0 011.4 0l4 4a1 1 0 01-1.4 1.4L12 11.42l-3.3 3.3z" />
-                      </svg>
-                    ) : (
-                      <svg
-                        className="rounded-full mr-4"
-                        style={{ background: "#002D51" }}
-                        viewBox="0 0 24 24"
-                        fill="white"
-                        height="40px"
-                        width="40px"
-                        {...props}
-                      >
-                        <path d="M15.3 9.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z" />
-                      </svg>
-                    )}
-                  </div>
-                </div>
-                {question === 2 && (
-                  <p className="p-2 text-gray-800 bg-white border-gray-800 border-2 text-sm xl:text-[18px] rounded-b-lg font-semibold">
-                    Nowadays, there are guided tours such as the one we are providing, which take all the necessary precautions recommended.
-
-                  </p>
-                )}
-              </li>
-              <li className="pb-2 border-gray-200 border-solid border-b">
-                <div className="flex justify-between items-center bg-[#50A477] rounded-lg">
-                  <h3 className="p-4 capitalize text-gray-800 text-xs font-bold md:text-lg text-white xl:text-[20px]">
-                    What to Bring to the Helicopter Tour?
-
-
-                  </h3>
-                  <div
-                    className="cursor-pointer"
-                    onClick={() =>
-                      question === 3 ? setquestion(null) : setquestion(3)
-                    }
-                  >
-                    {question === 3 ? (
-                      <svg
-                        className="rounded-full mr-4"
-                        style={{ background: "#002D51" }}
-                        viewBox="0 0 24 24"
-                        fill="white"
-                        height="40px"
-                        width="40px"
-                        {...props}
-                      >
-                        <path d="M8.7 14.7a1 1 0 01-1.4-1.4l4-4a1 1 0 011.4 0l4 4a1 1 0 01-1.4 1.4L12 11.42l-3.3 3.3z" />
-                      </svg>
-                    ) : (
-                      <svg
-                        className="rounded-full mr-4"
-                        style={{ background: "#002D51" }}
-                        viewBox="0 0 24 24"
-                        fill="white"
-                        height="40px"
-                        width="40px"
-                        {...props}
-                      >
-                        <path d="M15.3 9.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z" />
-                      </svg>
-                    )}
-                  </div>
-                </div>
-                {question === 3 && (
-                  <p className="p-2 text-gray-800 bg-white border-gray-800 border-2 text-sm xl:text-[18px] rounded-b-lg font-semibold">
-                    Camera/mobile phone camera/video gear (NOT drone), A smile, and a vigor to explore!
-
-                  </p>
-                )}
-              </li>
-
-            </ul>
-          </div>
         </div>
         <div class="col-span-2">
-                    <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
-                    <Booking />
-                    <div className='h-[600px]'>
-                        <Form />
-                    </div>
-                </div>
+          <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
+          <Booking />
+          <div className='h-[600px]'>
+            <Form />
+          </div>
+        </div>
       </div>
     </div>
   );

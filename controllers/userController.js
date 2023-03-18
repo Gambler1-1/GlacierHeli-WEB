@@ -10,17 +10,15 @@ const jwt = require('jsonwebtoken');
 //REGISTER USER ONLY IN CONTROL OF SUPERADMIN
 exports.registerUser = async (req, res) => {
     
-    const { name ,email, password, phoneNum, country } = req.body;
-    
+    const { email, password } = req.body;
     try {
         const userDoc = await User.create
             ({
-                ...req.body,
+                email,
                 password: bcrypt.hashSync(password, salt),
             });
         res.json(userDoc);
     }
-    
     catch (e) {
         res.status(400).json(e);
     }

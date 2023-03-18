@@ -5,15 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
-<<<<<<< Updated upstream
+import Booking from '../utils/BookingForm'
+
 import reyktour1 from '../assets/images/Rtour2image1.jpeg'
 import reyktour2 from '../assets/images/Rtour2image2.jpeg'
 import reyktour3 from '../assets/images/Rtour2image3.jpeg'
 import reyktour4 from '../assets/images/Rtour2image4.jpeg'
-=======
-import Booking from '../utils/BookingForm';
-
->>>>>>> Stashed changes
 
 const Tour = () => {
   const [question, setquestion] = useState(0);
@@ -353,12 +350,12 @@ const Tour = () => {
         </div>
 
         <div class="col-span-2">
-          <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
-          <Booking />
-          <div className='h-[600px]'>
-            <Form />
-          </div>
-        </div>
+                    <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
+                    <Booking />
+                    <div className='h-[600px]'>
+                        <Form />
+                    </div>
+                </div>
       </div>
     </div>
   );

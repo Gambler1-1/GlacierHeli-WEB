@@ -6,7 +6,6 @@ import image2 from '../assets/images/kettle.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faClock} from '@fortawesome/free-solid-svg-icons';
 
-
 const HomeComponent4 = () => {
     return (
         <div>
@@ -16,7 +15,6 @@ const HomeComponent4 = () => {
             <div className='flex flex-col md:flex-row justify-between '>
                 <div className='flex flex-col md:w-1/2 p-2 hover:scale-105 transition duration-500 cursor-pointers'>
                     <Link to='/Helicopter'>
-
                         <div className='relative hover:scale-105 transition duration-500 mt-6 cursor-pointer'>
                             <div className='absolute top-0 left-0 bg-[#50A477] text-white font-bold text-lg px-2 py-1 rounded-tr-lg'>
                                 ★★★★★
@@ -26,8 +24,6 @@ const HomeComponent4 = () => {
                                 <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
                                     <p className='text-white capitalize text-center text-lg font-bold '>
                                         A Thrilling Heli Ride from Modrudalur toward Mount Askja
-
-
                                     </p>
 
                                     <div className='flex justify-between'>
@@ -37,7 +33,7 @@ const HomeComponent4 = () => {
                                                 <h1>   70 Mins</h1>
                                             </div>
                                         </div>
-                                        <div className='bg-[#F7C033] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
+                                        <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
 
                                             <div>59,000 ISK</div>
                                         </div>
@@ -49,7 +45,6 @@ const HomeComponent4 = () => {
                 </div>
                 <div className='flex flex-col md:w-1/2 p-2 hover:scale-105 transition duration-500 cursor-pointers'>
                     <Link to='/StuðlagilCanyon '>
-
                         <div className='relative hover:scale-105 transition duration-500 mt-6 cursor-pointer'>
                             <div className='absolute top-0 left-0 bg-[#50A477] text-white font-bold text-lg px-2 py-1 rounded-tr-lg'>
                                 ★★★★★
@@ -59,10 +54,7 @@ const HomeComponent4 = () => {
                                 <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
                                     <p className='text-white capitalize text-center text-lg font-bold '>
                                         Stuðlagil Canyon Helicopter Tour
-
-
                                     </p>
-
                                     <div className='flex justify-between'>
                                         <div className='text-[#F7C033] flex'>
                                             <FontAwesomeIcon icon={faClock} className='lg:h-6 pt-1 pr-2' />
@@ -71,7 +63,6 @@ const HomeComponent4 = () => {
                                             </div>
                                         </div>
                                         <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
-
                                             <div>45,500 ISK</div>
                                         </div>
                                     </div>
@@ -101,10 +92,7 @@ const HomeComponent4 = () => {
                                 <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
                                     <p className='text-white capitalize text-center text-lg font-bold '>
                                     Modrudalur Kettle Holes: Helicopter Ride Experience
-
-
                                     </p>
-
                                     <div className='flex justify-between'>
                                         <div className='text-[#F7C033] flex'>
                                             <FontAwesomeIcon icon={faClock} className='lg:h-6 pt-1 pr-2' /><br />
@@ -113,7 +101,6 @@ const HomeComponent4 = () => {
                                             </div>
                                         </div>
                                         <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
-
                                             <div>27,500 ISK</div>
                                         </div>
                                     </div>

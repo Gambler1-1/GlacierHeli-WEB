@@ -3,6 +3,7 @@ import SingleBlogClient from '../utils/SingleBlogClient'
 
 const AllBlogs = () => {
     const [blogPosts, setBlogPosts] = useState([]);
+    
     useEffect(() => {
         fetch('https://glacierheli-solution.vercel.app/api/v1/allBlogs')
             .then((response) => {

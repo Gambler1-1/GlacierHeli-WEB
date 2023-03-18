@@ -4,15 +4,13 @@ import volcanic from '../assets/images/Mountaskja.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
+import Booking from '../utils/BookingForm'
+
 
 import Form from '../utils/Form2';
-<<<<<<< Updated upstream
 import reyktour1 from '../assets/images/Rtour1image1.jpeg'
 import reyktour2 from '../assets/images/Rtour1image2.jpeg'
 import reyktour3 from '../assets/images/Rtour1image3.jpeg'
-=======
-import Booking from '../utils/BookingForm';
->>>>>>> Stashed changes
 
 const Tour = () => {
 

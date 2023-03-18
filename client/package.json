@@ -2,6 +2,7 @@
   "name": "glacierheli",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://enigmatic-dawn-76188.herokuapp.com/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
@@ -17,7 +18,7 @@
     "react": "^18.2.0",
     "react-datepicker": "^4.10.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.43.6",
+    "react-fontawesome": "^1.7.1",
     "react-icons": "^4.7.1",
     "react-loader-spinner": "^5.3.4",
     "react-phone-number-input": "^3.2.19",
@@ -25,13 +26,12 @@
     "react-rating-stars-component": "^2.2.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.8.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "typeface-roboto": "^1.1.13",
     "web-vitals": "^2.1.4"
   },
-  "proxy": "http://localhost:3000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

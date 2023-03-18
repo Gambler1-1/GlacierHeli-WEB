@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import tales from '../assets/images/game.jpeg';
+import Booking from '../utils/BookingForm'
+
 import props from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
-<<<<<<< Updated upstream
 import northtour1 from '../assets/images/Ntour1image2.jpeg'
 import northtour2 from '../assets/images/Ntour1image3.jpeg'
 import northtour3 from '../assets/images/Ntour1image4.jpeg'
 import northtour4 from '../assets/images/Ntour1image5.jpeg'
-=======
-import Booking from '../utils/BookingForm';
-
->>>>>>> Stashed changes
 
 const Tour = () => {
   const [question, setquestion] = useState(0);
@@ -379,12 +376,12 @@ const Tour = () => {
 
         </div>
         <div class="col-span-2">
-          <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
-          <Booking />
-          <div className='h-[600px]'>
-            <Form />
-          </div>
-        </div>
+                    <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
+                    <Booking />
+                    <div className='h-[600px]'>
+                        <Form />
+                    </div>
+                </div>
       </div>
     </div>
   );

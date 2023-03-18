@@ -1,13 +1,16 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom';
 import image1 from '../assets/images/Mountaskja.jpg';
+
 import image2 from '../assets/images/FV.jpeg';
 import image3 from '../assets/images/geothermal.jpg';
+
 import image4 from '../assets/images/hengiltour.jpeg';
 import rejkavik from '../assets/images/rejkavik.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faCalendarAlt, faClock, faDollarSign } from '@fortawesome/free-solid-svg-icons';
-
 
 const HomeComponent2 = () => {
   
@@ -26,7 +29,7 @@ const HomeComponent2 = () => {
               <div className='relative hover:scale-105 transition duration-500 cursor-pointer'>                
                 <div className='flex flex-row justify-between'>
                   </div>
-                  <div className='absolute top-0 left-0 bg-[#50A477] text-white font-bold text-lg px-2 py-1 rounded-tr-lg'>
+    <div className='absolute top-0 left-0 bg-[#50A477] text-white font-bold text-lg px-2 py-1 rounded-tr-lg'>
                   ★★★★★
                 </div>
                 <img src={image1} alt='example' className='w-full h-80 object-cover rounded-md' />
@@ -34,7 +37,6 @@ const HomeComponent2 = () => {
                   <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
                     <p className='text-white capitalize text-center text-lg font-bold '>A Flashing Heli Ride; Reykjavik City And Mount Esja
                     </p>
-
                     <div className='flex justify-between'>
                       <div className='text-[#F7C033] flex '>
                         
@@ -45,7 +47,6 @@ const HomeComponent2 = () => {
                         </div>
                       </div>
                       <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
-
                         <div>29,500 ISK</div>
                       </div>
                     </div>
@@ -75,7 +76,6 @@ const HomeComponent2 = () => {
                       </div>
                     </div>
                     <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
-
                       <div>109,900 ISK</div>
                     </div>
                   </div>
@@ -106,14 +106,12 @@ const HomeComponent2 = () => {
                       </div>
                     </div>
                     <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
-
                       <div>49,000 ISK</div>
                     </div>
                   </div>
                 </p>
               </div>
             </div>
-
           </Link>
           <Link to='/Dazzling'>
 
@@ -126,10 +124,7 @@ const HomeComponent2 = () => {
                 <p className='shadow bg-black p-4 rounded-lg backdrop-opacity-10 backdrop-invert bg-black/30'>
                   <p className='text-white capitalize text-center text-lg font-bold '>
                     The Hengil Valcano : Helicopter tour!
-
-
                   </p>
-
                   <div className='flex justify-between'>
                     <div className='text-[#F7C033] flex'>
                       <FontAwesomeIcon icon={faClock} className='lg:h-6  pr-2' />
@@ -138,14 +133,12 @@ const HomeComponent2 = () => {
                       </div>
                     </div>
                     <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
-
                       <div>49,550 ISK</div>
                     </div>
                   </div>
                 </p>
               </div>
             </div>
-
           </Link>
         </div>
       </div>

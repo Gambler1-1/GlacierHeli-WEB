@@ -11,38 +11,24 @@ export default function Admin() {
     const [redirect, setRedirect] = useState(false);
     const { setUserInfo } = useContext(UserContext)
 
-
     const navigate = useNavigate();
 
     async function login(ev) {
         ev.preventDefault();
         try {
-            const response = await axios.post('https://glacierheli-solution.vercel.app/api/v1/login', {
+            const response = await axios.post('https://enigmatic-dawn-76188.herokuapp.com/api/v1/login', {
                 email, password
             });
-
-           
-
             console.log(response, "RESPONSE")
             setUserInfo(response.data.token)
             localStorage.setItem('token', response.data.token)
        navigate("/panel");
-
-
-
-
         } catch (error) {
             console.log(error, 'ERROR');
             alert(error.response.data.msg)
         }
-
-
+        
     }
-
-
-
-
-
     return (
         <div className="flex h-screen bg-gray-200">
 

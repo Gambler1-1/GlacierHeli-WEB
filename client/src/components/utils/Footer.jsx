@@ -1,7 +1,5 @@
 import React from "react";
-
 import image from '../assets/images/auth.png'
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faEnvelope,
@@ -9,11 +7,9 @@ import {
     faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 
-
 const Footer = () => {
     return (
         <div
-           
             className="w-full bg-no-repeat bg-top p-2 bg-cover bg-black"
         >
             <div className="xs:container mx-auto md:px-6 lg:px-20">

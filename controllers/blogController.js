@@ -1,5 +1,5 @@
 const cloudinary = require('cloudinary').v2;
-const Blog = require('../models/blog');
+const Blog = require('../models/Blog');
 
 
 cloudinary.config({
@@ -9,7 +9,7 @@ cloudinary.config({
 });
 
 exports.getAllBlogs = async (req, res) => {
-    res.json(await Blog.find())
+    res.json(await Blog.find({}))
 }
 
 exports.findBlog = async (req, res) => {

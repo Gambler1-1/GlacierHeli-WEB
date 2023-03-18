@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import props from "react";
 import tales from '../assets/images/geothermal.jpg';
+import Booking from '../utils/BookingForm'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faCalendarAlt, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
 import Form from '../utils/Form2';
 import { FaPlaneDeparture, FaClock, FaMapMarkerAlt, FaPlaneArrival } from 'react-icons/fa';
-<<<<<<< Updated upstream
 import reyktour1 from '../assets/images/Rtour3image1.jpeg'
 import reyktour2 from '../assets/images/Rtour3image2.jpeg'
 import reyktour3 from '../assets/images/Rtour3image3.jpeg'
 import reyktour4 from '../assets/images/Rtour3image4.jpeg'
-=======
-import Booking from '../utils/BookingForm';
-
->>>>>>> Stashed changes
 
 const Tour = () => {
   const [question, setquestion] = useState(0);
@@ -162,7 +159,7 @@ const Tour = () => {
             <h2 className='font-bold italic'>Total tour Time and distance
             </h2>
             <ul class="list-disc text-[15px] text-lg list-inside">
-              <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Ace FBO Reykjavík City</li>
+            <li className='flex'> Meeting Point: &nbsp;  <FaPlaneDeparture className='text-[#50A477]' />&nbsp; Ace FBO Reykjavík City</li>
               <li className='flex'> Total tour time &nbsp; <FaClock className='text-[#50A477]' />&nbsp; 100-130 minutes (may fluctuate)</li>
               <li className='flex'>Total distance from Reykjavík &nbsp; <FaMapMarkerAlt className='text-[#50A477]' />  &nbsp; Þórisjökull = 73 kilometers (45 miles)</li>
               <li className='flex'>Total distance from Reykjavík &nbsp; <FaMapMarkerAlt className='text-[#50A477]' />  &nbsp; Hengill = 36 kilometers (22 miles)</li>
@@ -388,12 +385,12 @@ const Tour = () => {
           
         </div>
         <div class="col-span-2">
-          <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
-          <Booking />
-          <div className='h-[600px]'>
-            <Form />
-          </div>
-        </div>
+                    <h1 className='text-center font-bold mt-10 bg-[#50A477] p-2 rounded-md text-white lg:text-3xl'>Travel Details</h1>
+                    <Booking />
+                    <div className='h-[600px]'>
+                        <Form />
+                    </div>
+                </div>
       </div>
     </div>
   );

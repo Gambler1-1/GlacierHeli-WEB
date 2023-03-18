@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { checkAuth } from 'react-router-dom'
 import Home from './components/home/Home'
 import Header from "./components/utils/Header";
 import Footer from "./components/utils/Footer";
@@ -13,7 +14,6 @@ import Geothermal from './components/tours/Geothermal'
 import Eruption from './components/tours/EruptionEscapade'
 import OurFleet from './components/our_fleet/OurFleet'
 import Admin from './components/adminDashboard/AdminLogin'
-import Panel from './components/adminDashboard/AdminPanel'
 import AdminHeader from "./components/adminDashboard/AdminHeader";
 import AdminSidebar from "./components/adminDashboard/AdminSidebar";
 import AdminCreateBlogs from "./components/adminDashboard/AdminCreateBlogs";
@@ -142,28 +142,9 @@ function App() {
             <Route
               path="/panel"
               element={
-
                 <AdminPanel />
-
               }
             />
-
-            {/* <Route
-              path="/panel"
-              element={
-                auth ? (
-                  <AdminLayout>
-                    <Panel />
-                  </AdminLayout>
-                ) : (
-                  <AdminLayout>
-                    <Admin />
-                  </AdminLayout>
-                )
-              }
-            /> */}
-
-
             <Route
               path="/create-blog"
               element={<AdminLayout2><AdminCreateBlogs /></AdminLayout2>}

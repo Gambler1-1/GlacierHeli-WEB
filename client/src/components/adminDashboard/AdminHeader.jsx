@@ -10,7 +10,7 @@ const AdminHeader = () => {
 
     const {setUserInfo,userInfo} = useContext(UserContext);
     useEffect(() => {
-        fetch('https://glacierheli-solution.vercel.app/api/v1/profile', {
+        fetch('https://wwww.glacierheli.is/api/v1/profile', {
             credentials: 'include'
         }).then(response => {
             response.json().then(userInfo => {

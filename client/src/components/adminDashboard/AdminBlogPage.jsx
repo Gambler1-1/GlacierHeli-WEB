@@ -5,6 +5,7 @@ import { UserContext } from '../utils/UserContext';
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
+import axios from 'axios';
 
 
 const AdminBlogPage = () => {
@@ -13,10 +14,11 @@ const AdminBlogPage = () => {
     const { userInfo } = useContext(UserContext)
 
     useEffect(() => {
-        fetch(`https://glacierheli-solution.vercel.app/api/v1/allBlogs/${id}`)
+        fetch(`https://www.glacieheli.is/api/v1/allBlogs/${id}`)
             .then(response => {
                 response.json().then(blogInfo => {
                     setBlogInfo(blogInfo);
+                    console.log(blogInfo);
                 })
             })
     }, []);

@@ -5,48 +5,81 @@ import { TiUser } from 'react-icons/ti';
 import { Navigate, useNavigate } from 'react-router-dom'
 import { RiTimeLine } from 'react-icons/ri';
 import axios from 'axios';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
+
 
 function BookingForm() {
     const navigate = useNavigate();
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [contact, setContact] = useState("");
+    const [total, setTotal] = useState("");
+    const [date, setDate] = useState("");
+    const [time, setTime] = useState("");
+    const [country, setCountry] = useState("");
+    const [sent, setSent] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
-    const [data, setData] = useState({
-        name: "",
-        email: "",
-        date: "",
-        noOfPassengers: "",
-        time: "",
-        phone: "",
-        country: "",
-
-
-    });
-    const [error, setError] = useState("");
-
-    const handleChange = ({ currentTarget: input }) => {
-        setData({ ...data, [input.name]: input.value });
+    const handleName = (e) => {
+        setName(e.target.value);
     };
-    const handleSelect = (e) => {
-        setData({ ...data, gender: e.target.value });
+    const handleTime = (e) => {
+        setTime(e.target.value);
+    };
+    const handleCountry = (e) => {
+        setCountry(e.target.value);
+    };
+    const handleContact = (e) => {
+        setContact(e.target.value);
     };
 
+    const handleEmail = (e) => {
+        setEmail(e.target.value);
+    };
 
+    const handleTotal = (e) => {
+        setTotal(e.target.value);
+    };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        try {
-            const url = "";
-            const response = axios.post(url, data)
+    const handleDate = (date) => {
+        setDate(date);
+    };
+    const formSubmit = (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        let data = {
+            name: name,
+            email: email,
+            phone: contact,
+            country: country,
+            noOfPassengers: total,
+            date: date,
+            time: time
+        };
+        axios
+            .post('http://localhost:4000/api/v1/form2', data)
+            .then((res) => {
+                if (res.status === 200) {
+                    setSent(true);
+                    setIsLoading(false);
+                    navigate('/cart');
+                } else {
+                    console.log("Error: ", res.statusText);
+                    setIsLoading(false);
+                }
+                console.log(data)
 
-        } catch (error) {
-            console.log(error)
-        }
-        navigate('/cart');
-
+            })
+            .catch((error) => {
+                console.log("Error: ", error);
+                setIsLoading(false);
+            });
     };
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={formSubmit}>
                 <div className='sm:grid sm:grid-cols-2 gap-3'>
                     <div className="mb-6">
                         <input
@@ -56,8 +89,8 @@ function BookingForm() {
                             id="name"
                             placeholder="Your Name"
                             required
-                            value={data.name}
-                            onChange={handleChange}
+                            value={name}
+                            onChange={handleName}
                         />
                     </div>
                     <div className="mb-6">
@@ -68,23 +101,21 @@ function BookingForm() {
                             id="email"
                             placeholder="Your Email"
                             required
-                            value={data.email}
-                            onChange={handleChange}
+                            value={email}
+                            onChange={handleEmail}
                         />
                     </div>
                 </div>
                 <div className='sm:grid sm:grid-cols-2 gap-3'>
 
                     <div className="">
-                        <input
+                        <PhoneInput
                             className="border-solid border-2 border-black pl-[12px] h-9 w-full rounded-lg"
-                            type="text"
-                            name="phone"
-                            id="phone"
-                            placeholder="Your Phone Number"
+                            placeholder="Enter phone number"
                             required
-                            value={data.phone}
-                            onChange={handleChange}
+                            value={contact}
+                            onChange={setContact}
+                            countrySelectProps={{ className: '' }}
                         />
                     </div>
                     <div className="">
@@ -95,8 +126,8 @@ function BookingForm() {
                             id="country"
                             placeholder="Country"
                             required
-                            value={data.country}
-                            onChange={handleChange}
+                            value={country}
+                            onChange={handleCountry}
                         />
                     </div>
                 </div>
@@ -106,8 +137,8 @@ function BookingForm() {
                     placeholderText="Select Travel Date: *"
                     className="mt-4 border-solid border-2 border-black pl-[12px] h-9 w-full rounded-lg"
                     // selected={startDate}
-                    onChange={handleChange}
-                    value={data.date}
+                    onChange={handleDate}
+                    value={date}
                 />
                 <div className="relative">
                     <div className="flex items-center mt-4 border-solid border-2 border-black pl-[12px] h-9 w-full rounded-lg ">
@@ -117,9 +148,8 @@ function BookingForm() {
                             id="numTravelers"
                             className="outline-none bg-transparent flex-1 text-lg"
                             name="numTravelers"
-                            onChange={handleChange}
-                            value={data.noOfPassengers}
-                            min="1"
+                            onChange={handleTotal}
+                            value={total}
                             required
                             placeholder="Enter number of travellers"
                         />
@@ -127,12 +157,12 @@ function BookingForm() {
                 </div>
 
                 <div className="relative">
-                    <div className="flex items-center mt-4 border-solid border-2 border-black pl-[12px] h-9 w-full rounded-lg ">
+                    <div className="flex items-center text-gray-500 mt-4 border-solid border-2 border-black pl-[12px] h-9 w-full rounded-lg ">
                         <RiTimeLine className="text-gray-500" />
 
-                        <select id="startTime" name="startTime" placeholder="Enter number of travellers"
-                            value={data.time} onChange={handleChange} className="outline-none bg-transparent flex-1 text-lg">
-                            <option value=""></option>
+                        <select id="startTime" name="startTime"
+                            value={time} onChange={handleTime} className="outline-none bg-transparent flex-1 text-lg">
+                            <option value="">Enter tour starting time</option>
                             <option value="9:00">9:00</option>
                             <option value="10:00">10:00</option>
                             <option value="11:00">11:00</option>

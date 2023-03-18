@@ -23,7 +23,7 @@ const AdminEditBlog = () => {
   const [redirect, setRedirect] = useState(false);
 
   useEffect(() => {
-    fetch('https://glacierheli-solution.vercel.app/api/v1/allBlogs/' + id)
+    fetch('https://www.glacierheli.is/api/v1/allBlogs/' + id)
       .then(response => {
         response.json().then(blogInfo => {
           setTitle(blogInfo.title);

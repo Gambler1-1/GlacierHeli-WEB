@@ -1,5 +1,4 @@
 import React from 'react';
-import image from '../assets/images/bgaboutus.jpg';
 
 const AboutUsComponent1 = () => {
     return (

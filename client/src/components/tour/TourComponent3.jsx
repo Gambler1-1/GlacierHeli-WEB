@@ -13,10 +13,10 @@ const TourComponent3 = () => {
   return (
     <div>
       <div className='flex items-center justify-center'>
-        <div className='font-bold uppercase text-[#002c52] text-2xl tracking-wider mr-4'>
+        <div className='font-bold uppercase text-[#002c52] text-2xl text-center tracking-wider mr-4'>
           Tours from Reykjavik
         </div>
-        <img src={rejkavik} alt='rejkavik' className='w-[90px] h-[90px]' />
+        {/* <img src={rejkavik} alt='rejkavik' className='w-[90px] h-[90px]' /> */}
       </div>
       <div className='flex flex-col gap-2 md:flex-row md:justify-center'>
         <div className='flex flex-col md:w-1/2' >

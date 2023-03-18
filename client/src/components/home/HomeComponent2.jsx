@@ -13,23 +13,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faCalendarAlt, faClock, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 
 const HomeComponent2 = () => {
-  
+
   return (
     <div>
       <div className='flex items-center justify-center'>
-        <div className='font-bold uppercase text-[#002c52] text-2xl tracking-wider mr-4'>
+
+        <div className='font-bold uppercase  py-4 
+        text-[#002c52]  text-2xl text-center tracking-wider mr-4'>
           Tours from Reykjavik
         </div>
-        <img src={rejkavik} alt='rejkavik' className='w-[90px] h-[90px]' />
+
+        {/* <img src={rejkavik} alt='rejkavik' className='w-[50px] h-[50px]' /> */}
       </div>
       <div className='flex flex-col gap-2 md:flex-row md:justify-center'>
         <div className='flex flex-col md:w-1/2' >
           <div className=''>
             <Link to='/Eruption-Escapade'>
-              <div className='relative hover:scale-105 transition duration-500 cursor-pointer'>                
+              <div className='relative hover:scale-105 transition duration-500 cursor-pointer'>
                 <div className='flex flex-row justify-between'>
-                  </div>
-    <div className='absolute top-0 left-0 bg-[#50A477] text-white font-bold text-lg px-2 py-1 rounded-tr-lg'>
+                </div>
+                <div className='absolute top-0 left-0 bg-[#50A477] text-white font-bold text-lg px-2 py-1 rounded-tr-lg'>
                   ★★★★★
                 </div>
                 <img src={image1} alt='example' className='w-full h-80 object-cover rounded-md' />
@@ -39,14 +42,14 @@ const HomeComponent2 = () => {
                     </p>
                     <div className='flex justify-between'>
                       <div className='text-[#F7C033] flex '>
-                        
-                        <FontAwesomeIcon icon={faClock} className='lg:h-6  pr-2' />
-                      
+
+                        <FontAwesomeIcon icon={faClock} className='lg:h-6  pr-2 ' />
+
                         <div className="lg:text-1xl text-[18px] font-semibold">
                           <h1> 40 Mins</h1>
                         </div>
                       </div>
-                      <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
+                      <div className='bg-[#F7C033] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
                         <div>29,500 ISK</div>
                       </div>
                     </div>
@@ -55,7 +58,7 @@ const HomeComponent2 = () => {
               </div>
             </Link>
           </div>
-          
+
           <Link to='/Bewildering-Geothermal'>
 
             <div className='relative hover:scale-105 transition mt-6 duration-500 cursor-pointer'>
@@ -75,7 +78,7 @@ const HomeComponent2 = () => {
                         <h1> 130 Mins </h1>
                       </div>
                     </div>
-                    <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
+                    <div className='bg-[#F7C033] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
                       <div>109,900 ISK</div>
                     </div>
                   </div>
@@ -105,7 +108,7 @@ const HomeComponent2 = () => {
                         <h1>40 Mins</h1>
                       </div>
                     </div>
-                    <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
+                    <div className='bg-[#F7C033] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
                       <div>49,000 ISK</div>
                     </div>
                   </div>
@@ -132,7 +135,7 @@ const HomeComponent2 = () => {
                         <h1>60 Mins</h1>
                       </div>
                     </div>
-                    <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
+                    <div className='bg-[#F7C033] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
                       <div>49,550 ISK</div>
                     </div>
                   </div>

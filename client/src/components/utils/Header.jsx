@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container mx-auto py-2 ">
         <header class="text-[#000000] body-font w-full">
           <div class="flex flex-wrap md:flex-row md:items-center">
-            <div class="xs:justify-start md:mb-0 basis-1/2 md:basis-auto">
+            <div class="xs:justify-start md:mb-0 basis-1/2 mt-2 pl-2 md:basis-auto">
               <img src={logo} alt="" className="w-[180px] h-[30px]" />
             </div>
             <nav class="hidden md:ml-auto md:mr-auto md:flex flex-wrap items-center text-[18px] justify-end text-center">
@@ -60,7 +60,7 @@ const Header = () => {
               </a>
             </div>
             <div
-              className="mt-5 md:hidden lg:hidden basis-1/2 text-right"
+              className="mt-3 pr-2 md:hidden lg:hidden basis-1/2 text-right"
               onClick={handleClick}
             >
               {!nav ? (
@@ -81,30 +81,32 @@ const Header = () => {
             className={
               !nav
                 ? "hidden"
-                : "absolute  bg-gray-50 w-full  px-8 right-0 top-16 z-[999999]"
+                : "absolute  bg-gray-50 w-full  px-8 right-0 top-15 z-[999999]"
             }
           >
             <nav class="">
               <Link to="/" onClick={handleClick}>
-                <li class="border-b-2 w-full p-2 mt-4">HOME</li>
+                <li class="border-b-2 w-full p-2 mt-4">Home</li>
               </Link>
-              <Link to="/about" onClick={handleClick}>
-                <li class="border-b-2 w-full p-2 mt-4">ABOUT</li>
+              <Link to="/Tour" onClick={handleClick}>
+                <li class="border-b-2 w-full p-2 mt-4">Tours</li>
               </Link>
-              <Link to="/supply-and-distribution" onClick={handleClick}>
+              <Link to="/Our-Fleet" onClick={handleClick}>
                 <li class="border-b-2 w-full p-2 mt-4">
-                  SUPPLY AND DISTRIBUTION
+                  Our Fleet
                 </li>
               </Link>
-              <Link to="/contact" onClick={handleClick}>
-                <li class="border-b-2 w-full p-2 mt-4">CONTACT US</li>
+              <Link to="/privateTours" onClick={handleClick}>
+                <li class="border-b-2 w-full p-2 mt-4">Private Tours</li>
+              </Link>
+              <Link to="/blogs" onClick={handleClick}>
+                <li class="border-b-2 w-full p-2 mt-4">Blogs</li>
+              </Link>
+              <Link to="/aboutus" onClick={handleClick}>
+                <li class="border-b-2 w-full p-2 mt-4">About Us</li>
               </Link>
             </nav>
-            <Link to="/contact" onClick={handleClick}>
-              <button class="text-white lg:hidden md:inline-flex items-center bg-[#2B5EAD] border-0 py-3 px-4 focus:outline-none hover:bg-[#3870c7] text-sm mt-4 md:mt-0 uppercase rounded-lg mb-2">
-                Contact Now
-              </button>
-            </Link>
+            
             <div className="mt-4 md:hidden">
               <a href="https://www.facebook.com/" className="text-black hover:text-gray-600 mr-4">
                 <FontAwesomeIcon icon={faFacebook} size="lg" />
@@ -116,6 +118,7 @@ const Header = () => {
                 <FontAwesomeIcon icon={faWhatsapp} size="lg" />
               </a>
             </div>
+            <br />
           </ul>
         </header>
       </div>

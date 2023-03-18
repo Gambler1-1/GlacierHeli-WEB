@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "../utils/Form1";
 import bgimage from "../assets/images/aboutbgimage.jpeg"
+
 const AboutUsComponent7 = () => {
   return (
     <div className="bg-image bg-cover bg-center h-[650px] uppercase" style={{ backgroundImage: `url(${bgimage})` }}>

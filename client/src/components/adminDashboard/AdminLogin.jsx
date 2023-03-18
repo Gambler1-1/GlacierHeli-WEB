@@ -16,7 +16,7 @@ export default function Admin() {
     async function login(ev) {
         ev.preventDefault();
         try {
-            const response = await axios.post('https://enigmatic-dawn-76188.herokuapp.com/api/v1/login', {
+            const response = await axios.post('https://www.glacierheli.is/api/v1/login', {
                 email, password
             });
             console.log(response, "RESPONSE")

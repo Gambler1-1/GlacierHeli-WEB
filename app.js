@@ -12,12 +12,16 @@ app.use(cookieParser())
 //ROUTES IMPORT
 const blogs = require("./routes/blogRoute");
 const users = require("./routes/userRoute");
+const orders = require("./routes/orderRoute");
+
 // app.use("/", (req,res)=>{
 // res.json({msg:"HOME PAGE"})
 // })
 
 app.use("/api/v1", users)
 app.use("/api/v1", blogs)
+app.use("/api/v1", orders)
+
 
 const connectDatabase = require("./config/database")
 

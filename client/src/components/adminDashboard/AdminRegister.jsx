@@ -5,7 +5,7 @@ export default function AdminRegister() {
     const [password, setPassword] = useState('');
     async function register(ev) {
         ev.preventDefault();
-        const response = await fetch('https://glacierheli-solution.vercel.app/api/v1/register', {
+        const response = await fetch('https://www.glacierheli.is/api/v1/register', {
             method: 'POST',
             body: JSON.stringify({ email, password }),
             headers: { 'Content-Type': 'application/json' },

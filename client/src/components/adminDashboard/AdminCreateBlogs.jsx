@@ -28,7 +28,7 @@ const BlogForm = () => {
         for (let i = 0; i < blogImages.length; i++) {
             formData.append("blogImages", blogImages[i]);
           }
-        const response = await axios.post('https://glacierheli-solution.vercel.app/api/v1/blogs', formData);
+        const response = await axios.post('https://www.glacierheli.is/api/v1/blogs', formData);
         console.log(response);
         if (response.status === 200) {
             setRedirect(true);

@@ -5,7 +5,7 @@ const AllBlogs = () => {
     const [blogPosts, setBlogPosts] = useState([]);
     
     useEffect(() => {
-        fetch('https://glacierheli-solution.vercel.app/api/v1/allBlogs')
+        fetch('https://enigmatic-dawn-76188.herokuapp.com/api/v1/allBlogs')
             .then((response) => {
                 response.json().then((blogs) => {
                     setBlogPosts(blogs);

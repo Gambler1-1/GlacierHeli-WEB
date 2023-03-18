@@ -26,6 +26,7 @@ import ModrudalurKettle from "./components/tours/ModrudalurKettle";
 import StuðlagilCanyon from "./components/tours/StuðlagilCanyon";
 import { useState, useEffect } from "react";
 import AdminPanel from "./pages/AdminPanel";
+import Cart from "./components/utils/Cart"
 
 function Layout({ children }) {
   return (
@@ -79,6 +80,10 @@ function App() {
             <Route
               path="/"
               element={<Layout><Home /></Layout>}
+            />
+              <Route
+              path="/cart/:id"
+              element={<Layout><Cart /></Layout>}
             />
             <Route
               path="/aboutus"

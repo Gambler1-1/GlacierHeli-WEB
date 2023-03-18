@@ -58,12 +58,14 @@ function BookingForm() {
             time: time
         };
         axios
-            .post('http://localhost:4000/api/v1/form2', data)
+            .post('http://localhost:5000/api/v1/createOrder', data)
             .then((res) => {
                 if (res.status === 200) {
+                    console.log(res.data.order._id,"data")
+                    let id = res.data.order._id
                     setSent(true);
                     setIsLoading(false);
-                    navigate('/cart');
+                    navigate(`/cart/${id}`);
                 } else {
                     console.log("Error: ", res.statusText);
                     setIsLoading(false);

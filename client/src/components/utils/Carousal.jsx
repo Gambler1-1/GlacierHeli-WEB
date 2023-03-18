@@ -58,13 +58,13 @@ const SocialMediaComponent = () => {
 
             </div> */}
             <div className='bg-[#50A477] py-8'>
-                <h1 className='text-1xl text-[#002c52] italic text-center'>
+                <h1 className='text-2xl font-bold text-[#002c52] italic text-center'>
                     Blog & News
                 </h1>
                 <h1 className="lg:font-bold text-white lg:text-3xl text-center sm:font-light sm:mx-4 sm:text-xs">
                     Latest News
                 </h1>
-                <div className='text-center font-bold text-[15px] pt-4 text-white'>
+                <div className='text-center font-bold text-[16px] pt-4 px-8 text-white'>
                     Latest updates about Icelandic Tourism , culture , regions and surroundings.
 
 

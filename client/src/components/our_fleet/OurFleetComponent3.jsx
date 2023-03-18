@@ -38,7 +38,7 @@ const OurFleetComponent3 = () => {
                 </div>
                 
             </div> */}
-            <div className='lg:grid lg:grid-cols-11 gap- my-10'>
+            <div className='grid sm:grid-cols-11 gap- my-10 px-8'>
             <div></div>
            
             <div className='col-span-4'>

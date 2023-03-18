@@ -33,7 +33,7 @@ const HomeComponent4 = () => {
                                                 <h1>   70 Mins</h1>
                                             </div>
                                         </div>
-                                        <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
+                                        <div className='bg-[#F7C033] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
 
                                             <div>59,000 ISK</div>
                                         </div>
@@ -62,7 +62,7 @@ const HomeComponent4 = () => {
                                                 <h1> 60 Mins</h1>
                                             </div>
                                         </div>
-                                        <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
+                                        <div className='bg-[#F7C033] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
                                             <div>45,500 ISK</div>
                                         </div>
                                     </div>
@@ -100,7 +100,7 @@ const HomeComponent4 = () => {
                                                 <h1> 25 Mins</h1>
                                             </div>
                                         </div>
-                                        <div className='bg-[#50A477] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
+                                        <div className='bg-[#F7C033] font-bold text-lg py-[1px] rounded-tr-lg px-2'>
                                             <div>27,500 ISK</div>
                                         </div>
                                     </div>

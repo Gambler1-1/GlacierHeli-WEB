@@ -13,17 +13,17 @@ const Footer = () => {
             className="w-full bg-no-repeat bg-top p-2 bg-cover bg-black"
         >
             <div className="xs:container mx-auto md:px-6 lg:px-20">
-                <div className="grid grid-row-1 md:grid-cols-4 md:gap-4 text-center text-white">
+                <div className="grid grid-row-1 md:grid-cols-4 md:gap-4 text-center text-white px-8">
                     <div className="lg:col-span-1 col-start text-left ">
-                        <p className="mt-8 mb-2 mr-2 text-md sm:mb-3 text-justify lg:w-3/3 leading-relaxed ">
-                            <span className="text-3xl">Glacierheli.is<br />
-                            </span><br />
+                        <p className="mt-8 mb-2 mr-2 sm:text-md text-sm sm:mb-3 text-justify lg:w-3/3 leading-relaxed ">
+                            <span className="sm:text-3xl text-lg font-bold">Glacierheli.is<br />
+                            </span>
                             Glaicerheli.is continues to be the market leader in tourism-based operations, with unmatched customer service, the finest aircraft, the most trained pilots, the greatest safety standards, and unique tours
                         </p>
                     </div>
                     <div className="text-center col-center md:col-span-2 text-left mt-5">
-                        <h1 className="text-3xl  ">Authorized Travel Agency</h1>
-                        <p className="mt-2">Glacierheli is the project of Shai ehf Licensed by Iceland tourism board</p>
+                        <h1 className="text-3xl  text-lg font-bold">Authorized Travel Agency</h1>
+                        <p className="mt-2 sm:text-md text-sm">Glacierheli is the project of Shai ehf Licensed by Iceland tourism board</p>
 
                         <div className="flex justify-center flex-wrap mt-4">
                             <a href="https://www.ferdamalastofa.is/en/licences-legislation/travel-agency/list-of-travel-agencies">
@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                     <div className=" pb-8 pl-10 mt-5 text-left md:col-span-1 lg:col-span-1">
                         <ul>
-                            <h1 className=" text-3xl">Connect with us</h1>
+                            <h1 className=" sm-text-3xl text-lg font-bold">Connect with us</h1>
                             <li className="my-7 text-sm">
                                 <div className="grid grid-cols-7 gap-4">
                                     <FontAwesomeIcon
